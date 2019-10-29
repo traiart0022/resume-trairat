@@ -2,7 +2,7 @@
   "name": "resume",
   "version": "0.1.0",
   "private": true,
-  "homepage": "http://traiart0022.github.io/react-test/",
+  "homepage": "http://traiart0022.github.io/react-trairat/",
   "dependencies": {
     "body-parser": "^1.19.0",
     "bootstrap": "^4.3.1",
