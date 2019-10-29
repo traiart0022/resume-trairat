@@ -2,6 +2,7 @@
   "name": "resume",
   "version": "0.1.0",
   "private": true,
+  "homepage": "https://Trairat-Sukpong.github.io/resume-trairat/",
   "dependencies": {
     "body-parser": "^1.19.0",
     "bootstrap": "^4.3.1",
