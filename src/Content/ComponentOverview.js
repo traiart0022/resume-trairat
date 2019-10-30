@@ -761,7 +761,7 @@ export default class ComponentIntroduceMyself extends Component {
                                                         <div className="d-flex justify-content-center ">
 
                                                             <a target="blank" href="https://www.youtube.com/watch?v=eBMgtnE_wLU&fbclid=IwAR0AvGJ39c9Bof5AOntUpB8PQG1IeF-gDarCmdSVek1PyAQ8TU9lzbGiQBQ">
-                                                                <button className="btn btn-success" >LINK TO www.youtube.com</button>
+                                                                <button className="btn btn-success" >LINK To www.youtube.com</button>
                                                             </a>
 
                                                         </div>
