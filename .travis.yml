@@ -12,6 +12,8 @@ script: # run after installed
 - npm run build # build project
 install:
   npm install -g firebase-tools # install firebase-cli
+api_key:
+    secure: ${Trairat_job}
 after_success:
 - firebase use --token ${FIREBASE_TOKEN} # set firebase token
 - firebase use --add ${PROJECT_ID} # set current project
