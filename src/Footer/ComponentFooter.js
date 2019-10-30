@@ -34,7 +34,7 @@ export default class ComponentFooter extends Component {
                                                                       
                                     </div>
                                     <div className="d-flex justify-content-center">
-                                        <h5><b>FB: <a href='https://www.facebook.com/kok.chikago.5' target="_blank">facebook</a></b></h5>
+                                        <h5><b>FB: <a href='https://www.facebook.com/kok.chikago.5' target="blank">facebook</a></b></h5>
                                         
                                     </div>
 

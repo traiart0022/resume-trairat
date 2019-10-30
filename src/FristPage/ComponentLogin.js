@@ -43,7 +43,7 @@ export default class ComponentLogin extends Component {
 
       this.setState({ Cookies: cookies.get('ComponentOverview') })
 
-      if ((this.state.UserName == "Trairat") && (this.state.Password == "password1234")) {
+      if ((this.state.UserName === "Trairat") && (this.state.Password === "password1234")) {
 
         cookies.set("ComponentOverview", this.state.UserName, { path: "/ComponentOverview" });
         window.location.replace("/ComponentOverview")

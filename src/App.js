@@ -1,6 +1,6 @@
 import React, { Component } from 'react'
 import Content from "./Content/ComponentOverview"
-import FristPage from "./FristPage/ComponentLogin"
+/* import FristPage from "./FristPage/ComponentLogin" */
 import Doc from "./DocFinalprojeect/ComponentDoc"
 import { BrowserRouter as Router, Switch, Route } from 'react-router-dom'
 export default class App extends Component {

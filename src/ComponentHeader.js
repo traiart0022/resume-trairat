@@ -1,7 +1,7 @@
 import React, { Component } from 'react'
 import Cookies from "universal-cookie";
-import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
-const cookies = new Cookies();
+/* import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
+const cookies = new Cookies(); */
 
 export default class ComponentHeader extends Component {
     constructor(props) {

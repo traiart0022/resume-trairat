@@ -505,7 +505,7 @@ export default class ComponentIntroduceMyself extends Component {
 
                                                     <div class="col-xs-12 col-sm-12 col-md-12 col-lg-12 my-2 d-flex justify-content-center">
                                                         <button class="btn btn-warning" >
-                                                            <a href="http://eve.ke.in.th/" target="_blank">
+                                                            <a href="http://eve.ke.in.th/" target="blank">
                                                                 <h4>
                                                                     <FontAwesomeIcon icon="solar-panel" style={{ height: "30px", width: "30px", color: "blue" }} />&nbsp;
                                                                     link to eve.ke.in.th
@@ -674,7 +674,7 @@ export default class ComponentIntroduceMyself extends Component {
                                             </ul>
                                             <div class="container-fluid">
                                                 <div className="d-flex justify-content-center my-2">
-                                                    <Link to={Pdf} target="_blank" download><button className="btn btn-success" >Download DOCUMENTS</button></Link>
+                                                    <Link to={Pdf} target="blank" download><button className="btn btn-success" >Download DOCUMENTS</button></Link>
                                                 </div>
                                                 <div className="d-flex justify-content-center">
                                                     <Link to={'/Doc'}><button className="btn btn-success">LINK TO DOCUMENTS </button></Link>
@@ -760,7 +760,7 @@ export default class ComponentIntroduceMyself extends Component {
 
                                                         <div className="d-flex justify-content-center ">
 
-                                                            <a target="_blank" href="https://www.youtube.com/watch?v=eBMgtnE_wLU&fbclid=IwAR0AvGJ39c9Bof5AOntUpB8PQG1IeF-gDarCmdSVek1PyAQ8TU9lzbGiQBQ">
+                                                            <a target="blank" href="https://www.youtube.com/watch?v=eBMgtnE_wLU&fbclid=IwAR0AvGJ39c9Bof5AOntUpB8PQG1IeF-gDarCmdSVek1PyAQ8TU9lzbGiQBQ">
                                                                 <button className="btn btn-success" >LINK TO www.youtube.com</button>
                                                             </a>
 
