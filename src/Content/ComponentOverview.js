@@ -2,6 +2,7 @@ import React, { Component } from 'react'
 import Header from "../ComponentHeader"
 import Footer from "../Footer/ComponentFooter"
 import { Link } from 'react-router-dom'
+import "../font-awesome-animation.min.css"
 
 import img1 from "./S.Trairat1.jpg"
 import iconReact from "./iconReact.png"
@@ -63,7 +64,9 @@ import {
     faMobile,
     faComments,
     faUsers,
-    faDoorOpen
+    faDoorOpen,
+    faEnvelope,
+    faStar
 } from '@fortawesome/free-solid-svg-icons'
 
 library.add(fab,
@@ -76,12 +79,15 @@ library.add(fab,
     faMobile,
     faComments,
     faUsers,
-    faDoorOpen
+    faDoorOpen,
+    faEnvelope,
+    faStar
 )
 
 var Overview_responsive = {
     width: '80%',
-    height: '80%'
+    height: '80%',
+    boxShadow: "10px 10px 5px grey"
 }
 
 var Overview_responsive_icon = {
@@ -101,13 +107,22 @@ var Overview_Container = {
 var Overview_div = {
     textAlign: 'center'
 }
+
+
 /* var Overview_responsive_1 = {
     width: '100%',
     height: '100%'
 } */
 
+var animetion = "faa-bounce animated"
+var animetionSkill = "faa-wrench animated"
+
+
 export default class ComponentIntroduceMyself extends Component {
+
+
     render() {
+
         return (
             <div>
                 <Header />
@@ -128,13 +143,13 @@ export default class ComponentIntroduceMyself extends Component {
                             <div className="col-xs-12 col-sm-6 col-md-6 col-lg-4 align-self-center">
                                 <div class="container-fluid rounded p-5 my-2" style={{ backgroundColor: "#8cd98c", borderStyle: "solid ", borderColor: "Black", borderWidth: "3px" }}>
                                     <ul>
-                                        <li>Name: Mr Trirat Sukphong</li>
-                                        <li>Nickname: Duck</li>
-                                        <li>Date/Month/Year of Birth: 19 March 1997</li>
-                                        <li>Marital status: Single</li>
-                                        <li>Address 8 Soi-Wutthakat 42, Wutthakat Road
+                                        <li>Name: <b>Mr. Trirat Sukphong</b></li>
+                                        <li>Nickname: <b>Duck</b></li>
+                                        <li>Date of Birth: <b>19 March 1997</b></li>
+                                        <li>Marital status: <b>Single</b></li>
+                                        <li>Address:<b> 8 Soi-Wutthakat 42, Wutthakat Road
                                             - Bang Kho Subdistrict - Chom Thong District
-                                        Bangkok 10150</li>
+                                        Bangkok 10150</b></li>
                                     </ul>
 
                                 </div>
@@ -143,19 +158,31 @@ export default class ComponentIntroduceMyself extends Component {
                             <div className="col-xs-12 col-sm-6 col-md-6 col-lg-4 align-self-center">
                                 <div class="container-fluid rounded p-5 my-2" style={{ backgroundColor: "#8cd98c", borderStyle: "solid ", borderColor: "Black", borderWidth: "3px" }}>
                                     <ul>
-                                        <li>Thailand nationality.</li>
-                                        <li>weight 47 kg</li>
-                                        <li>height 166 cm</li>
-                                        <li>No military obligations</li>
-                                        <li>Hobby: Play Mobile Games(ROV) AND Play Football</li>
+                                        <li>Nationality: <b>Thai</b></li>
+                                        <li>weight: <b>47 kg</b></li>
+                                        <li>height: <b>166 cm</b></li>
+                                        <li><b>No military obligations</b></li>
+                                        <li>Hobby: </li>
+                                        <b>Play Mobile Games(ROV)</b> <FontAwesomeIcon icon="star" className={animetion} style={{ color: "#e65c00" }} />
+                                        <FontAwesomeIcon className={animetion} icon="star" style={{ color: "#e65c00" }} />
+                                        <FontAwesomeIcon className={animetion} icon="star" style={{ color: "#e65c00" }} />
+                                        <FontAwesomeIcon className={animetion} icon="star" style={{ color: "#e65c00" }} />
+                                        <FontAwesomeIcon className={animetion} icon="star" style={{ color: "#e65c00" }} />
+
+                                        <b>Play Football</b><FontAwesomeIcon icon="star" className={animetion} style={{ color: "#e65c00" }} />
+                                        <FontAwesomeIcon className={animetion} icon="star" style={{ color: "#e65c00" }} />
+                                        <FontAwesomeIcon className={animetion} icon="star" style={{ color: "#e65c00" }} />
+                                        <FontAwesomeIcon className={animetion} icon="star" style={{ color: "#e65c00" }} />
+                                        <FontAwesomeIcon className={animetion} icon="star" style={{ color: "#e65c00" }} />
+
 
                                     </ul>
 
                                     <div className=" d-flex justify-content-center">
-                                        <FontAwesomeIcon className="mr-auto" icon="gamepad" style={{ height: "60px", width: "60px", color: "blue" }} />
-                                        <FontAwesomeIcon className="mr-auto" icon="futbol" style={{ height: "60px", width: "60px", color: "blue" }} />
-                                        <FontAwesomeIcon className="mr-auto" icon="table-tennis" style={{ height: "60px", width: "60px", color: "blue" }} />
-                                        <FontAwesomeIcon icon="glass-cheers" style={{ height: "60px", width: "60px", color: "blue" }} />
+                                        <FontAwesomeIcon className="mr-auto faa-tada animated-hover faa-fast" icon="gamepad" style={{ height: "60px", width: "60px", color: "blue" }} />
+                                        <FontAwesomeIcon className="mr-auto faa-tada animated-hover faa-fast" icon="futbol" style={{ height: "60px", width: "60px", color: "blue" }} />
+                                        <FontAwesomeIcon className="mr-auto faa-tada animated-hover faa-fast" icon="table-tennis" style={{ height: "60px", width: "60px", color: "blue" }} />
+                                        <FontAwesomeIcon className="faa-tada animated-hover faa-fast" icon="glass-cheers" style={{ height: "60px", width: "60px", color: "blue" }} />
                                     </div>
                                 </div>
                             </div>
@@ -180,8 +207,13 @@ export default class ComponentIntroduceMyself extends Component {
                                                     <div class="container-fluid d-flex justify-content-center">
 
                                                         <div className="">
-                                                            <h4>King Mongkut's University of Technology North Bangkok (GPA 2.9)</h4>
+                                                            <center>
+                                                                <h4>King Mongkut's University of Technology North Bangkok </h4>
+                                                                <h5>Bachelor of Electronics Engineering (Telecommunication GPA 2.9)</h5>
+                                                            </center>
                                                         </div>
+
+
                                                     </div>
                                                     <div class="container-fluid ">
 
@@ -224,7 +256,10 @@ export default class ComponentIntroduceMyself extends Component {
                                                     <div class="container-fluid d-flex justify-content-center">
 
                                                         <div className="">
-                                                            <h4>Rajasitaram Technical College, Bangbon Subdistrict, Bang Bon District, Bangkok (GPA 3.79)</h4>
+                                                            <center>
+                                                                <h4>Rajasitaram Technical College</h4>
+                                                                <h5>Vocational Certificate Electronics Technology (GPA 3.79)</h5>
+                                                            </center>
                                                         </div>
                                                     </div>
 
@@ -272,55 +307,134 @@ export default class ComponentIntroduceMyself extends Component {
                                             <div class="container-fluid rounded" style={{ backgroundColor: "#ffb3b3", borderStyle: "solid ", borderColor: "Black", borderWidth: "3px" }}>
 
                                                 <h4>Web Application</h4>
-                                                <ul >
-                                                    <div className="d-flex justify-content-start ">
-                                                        <div class="container-fluid">
-                                                            <div class="row">
 
-                                                                <div class="col-xs-6 col-sm-6 col-md-6 col-lg-6">
-                                                                    <div /* className="mr-lg-5" ff8080*/>
-                                                                        <li>Front-End</li>
+                                                <div class="container-fluid">
+                                                    <div class="row">
 
-                                                                        <h6>React</h6>
-                                                                        <h6>CSS3</h6>
-                                                                        <h6>HTML5</h6>
-                                                                        <h6>Bootstrap</h6>
+                                                        <div class="col-xs-6 col-sm-6 col-md-6 col-lg-6">
 
-                                                                    </div>
-                                                                </div>
+                                                            <li>Front-End</li>
 
-                                                                <div class="col-xs-6 col-sm-6 col-md-6 col-lg-6">
-                                                                    <div /* className="ml-5 mr-5" */>
-                                                                        <li>Back-End</li>
+                                                            <h6>
+                                                                React : <FontAwesomeIcon className={animetionSkill} icon="star" style={{ color: "#e65c00" }} />
+                                                                <FontAwesomeIcon className={animetionSkill} icon="star" style={{ color: "#e65c00" }} />
+                                                                <FontAwesomeIcon className={animetionSkill} icon="star" style={{ color: "#e65c00" }} />
+                                                                <FontAwesomeIcon className={animetionSkill} icon="star" style={{ color: "#e65c00" }} />
+                                                                <FontAwesomeIcon icon="star" style={{ color: "#adad85" }} />
+                                                            </h6>
+                                                            <h6>
+                                                                CSS3 : <FontAwesomeIcon className={animetionSkill} icon="star" style={{ color: "#e65c00" }} />
+                                                                <FontAwesomeIcon className={animetionSkill} icon="star" style={{ color: "#e65c00" }} />
+                                                                <FontAwesomeIcon className={animetionSkill} icon="star" style={{ color: "#e65c00" }} />
+                                                                <FontAwesomeIcon icon="star" style={{ color: "#adad85" }} />
+                                                                <FontAwesomeIcon icon="star" style={{ color: "#adad85" }} />
+                                                            </h6>
+                                                            <h6>
+                                                                HTML5 : <FontAwesomeIcon className={animetionSkill} icon="star" style={{ color: "#e65c00" }} />
+                                                                <FontAwesomeIcon className={animetionSkill} icon="star" style={{ color: "#e65c00" }} />
+                                                                <FontAwesomeIcon className={animetionSkill} icon="star" style={{ color: "#e65c00" }} />
+                                                                <FontAwesomeIcon icon="star" style={{ color: "#adad85" }} />
+                                                                <FontAwesomeIcon icon="star" style={{ color: "#adad85" }} />
+                                                            </h6>
+                                                            <h6>Bootstrap : <FontAwesomeIcon className={animetionSkill} icon="star" style={{ color: "#e65c00" }} />
+                                                                <FontAwesomeIcon className={animetionSkill} icon="star" style={{ color: "#e65c00" }} />
+                                                                <FontAwesomeIcon className={animetionSkill} icon="star" style={{ color: "#e65c00" }} />
+                                                                <FontAwesomeIcon className={animetionSkill} icon="star" style={{ color: "#e65c00" }} />
+                                                                <FontAwesomeIcon icon="star" style={{ color: "#adad85" }} />
+                                                            </h6>
 
-                                                                        <h6>Node js</h6>
-                                                                        <h6>Express</h6>
-                                                                        <h6>Mysql</h6>
 
-                                                                    </div>
-                                                                </div>
-
-                                                            </div>
                                                         </div>
-                                                    </div>
 
-                                                </ul>
+                                                        <div class="col-xs-6 col-sm-6 col-md-6 col-lg-6">
+
+                                                            <li>Back-End</li>
+
+                                                            <h6>
+                                                                Node js : <FontAwesomeIcon className={animetionSkill} icon="star" style={{ color: "#e65c00" }} />
+                                                                <FontAwesomeIcon className={animetionSkill} icon="star" style={{ color: "#e65c00" }} />
+                                                                <FontAwesomeIcon className={animetionSkill} icon="star" style={{ color: "#e65c00" }} />
+                                                                <FontAwesomeIcon icon="star" style={{ color: "#adad85" }} />
+                                                                <FontAwesomeIcon icon="star" style={{ color: "#adad85" }} />
+                                                            </h6>
+                                                            <h6>
+                                                                Express : <FontAwesomeIcon className={animetionSkill} icon="star" style={{ color: "#e65c00" }} />
+                                                                <FontAwesomeIcon className={animetionSkill} icon="star" style={{ color: "#e65c00" }} />
+                                                                <FontAwesomeIcon className={animetionSkill} icon="star" style={{ color: "#e65c00" }} />
+                                                                <FontAwesomeIcon icon="star" style={{ color: "#adad85" }} />
+                                                                <FontAwesomeIcon icon="star" style={{ color: "#adad85" }} />
+                                                            </h6>
+                                                            <h6>
+                                                                Mysql : <FontAwesomeIcon className={animetionSkill} icon="star" style={{ color: "#e65c00" }} />
+                                                                <FontAwesomeIcon className={animetionSkill} icon="star" style={{ color: "#e65c00" }} />
+                                                                <FontAwesomeIcon className={animetionSkill} icon="star" style={{ color: "#e65c00" }} />
+                                                                <FontAwesomeIcon icon="star" style={{ color: "#adad85" }} />
+                                                                <FontAwesomeIcon icon="star" style={{ color: "#adad85" }} />
+                                                            </h6>
+                                                            <h6>
+                                                                Firebase : <FontAwesomeIcon className={animetionSkill} icon="star" style={{ color: "#e65c00" }} />
+                                                                <FontAwesomeIcon className={animetionSkill} icon="star" style={{ color: "#e65c00" }} />
+                                                                <FontAwesomeIcon className={animetionSkill} icon="star" style={{ color: "#e65c00" }} />
+                                                                <FontAwesomeIcon icon="star" style={{ color: "#adad85" }} />
+                                                                <FontAwesomeIcon icon="star" style={{ color: "#adad85" }} />
+                                                            </h6>
+
+
+                                                        </div>
+
+                                                    </div>
+                                                </div>
+
+
+
                                             </div>
 
 
                                         </div>
 
-                                        <div className="col-xs-12 col-sm-12 col-md-6 col-lg-4">
+                                        <div className="col-xs-12 col-sm-12 col-md-6 col-lg-4 align-self-center">
                                             <div class="container-fluid rounded my-2" style={{ backgroundColor: "#ffb3b3", borderStyle: "solid ", borderColor: "Black", borderWidth: "3px" }}>
                                                 <h4>Desktop Application</h4>
                                                 <div class="container-fluid">
                                                     <div class="row">
                                                         <ul >
 
-                                                            <li><h6>vb.net</h6></li>
-                                                            <li><h6>Linq</h6></li>
-                                                            <li><h6>Sql Server</h6></li>
-                                                            <li><h6>Report Viewer</h6></li>
+                                                            <li>
+                                                                <h6>
+                                                                    Visual Basic.net : <FontAwesomeIcon className={animetionSkill} icon="star" style={{ color: "#e65c00" }} />
+                                                                <FontAwesomeIcon className={animetionSkill} icon="star" style={{ color: "#e65c00" }} />
+                                                                <FontAwesomeIcon className={animetionSkill} icon="star" style={{ color: "#e65c00" }} />
+                                                                <FontAwesomeIcon icon="star" style={{ color: "#adad85" }} />
+                                                                <FontAwesomeIcon icon="star" style={{ color: "#adad85" }} />
+                                                                </h6>
+                                                            </li>
+                                                            <li>
+                                                                <h6>
+                                                                    Linq : <FontAwesomeIcon className={animetionSkill} icon="star" style={{ color: "#e65c00" }} />
+                                                                <FontAwesomeIcon className={animetionSkill} icon="star" style={{ color: "#e65c00" }} />
+                                                                <FontAwesomeIcon className={animetionSkill} icon="star" style={{ color: "#e65c00" }} />
+                                                                <FontAwesomeIcon icon="star" style={{ color: "#adad85" }} />
+                                                                <FontAwesomeIcon icon="star" style={{ color: "#adad85" }} />
+                                                                </h6>
+                                                            </li>
+                                                            <li>
+                                                                <h6>
+                                                                    Sql Server : <FontAwesomeIcon className={animetionSkill} icon="star" style={{ color: "#e65c00" }} />
+                                                                <FontAwesomeIcon className={animetionSkill} icon="star" style={{ color: "#e65c00" }} />
+                                                                <FontAwesomeIcon className={animetionSkill} icon="star" style={{ color: "#e65c00" }} />
+                                                                <FontAwesomeIcon icon="star" style={{ color: "#adad85" }} />
+                                                                <FontAwesomeIcon icon="star" style={{ color: "#adad85" }} />
+                                                                </h6>
+                                                            </li>
+                                                            <li>
+                                                                <h6>
+                                                                    Report Viewer : <FontAwesomeIcon className={animetionSkill} icon="star" style={{ color: "#e65c00" }} />
+                                                                <FontAwesomeIcon className={animetionSkill} icon="star" style={{ color: "#e65c00" }} />
+                                                                <FontAwesomeIcon className={animetionSkill} icon="star" style={{ color: "#e65c00" }} />
+                                                                <FontAwesomeIcon icon="star" style={{ color: "#adad85" }} />
+                                                                <FontAwesomeIcon icon="star" style={{ color: "#adad85" }} />
+                                                                </h6>
+                                                            </li>
 
                                                         </ul>
                                                     </div>
@@ -328,17 +442,50 @@ export default class ComponentIntroduceMyself extends Component {
                                             </div>
                                         </div>
 
-                                        <div className="col-xs-12 col-sm-12 col-md-6 col-lg-4 ">
+                                        <div className="col-xs-12 col-sm-12 col-md-6 col-lg-4 align-self-center">
                                             <div class="container-fluid rounded my-2" style={{ backgroundColor: "#ffb3b3", borderStyle: "solid ", borderColor: "Black", borderWidth: "3px" }}>
                                                 <h4>Language English Skills</h4>
                                                 <div class="container-fluid">
                                                     <div class="row">
                                                         <ul >
 
-                                                            <li><h6>Reading : Middle</h6></li>
-                                                            <li><h6>Listening : Middle</h6></li>
-                                                            <li><h6>Writing : pretty low</h6></li>
-                                                            <li><h6>Speeking : Middle</h6></li>
+                                                            <li>
+                                                                <h6>
+                                                                    Reading : <FontAwesomeIcon className={animetionSkill} icon="star" style={{ color: "#e65c00" }} />
+                                                                <FontAwesomeIcon className={animetionSkill} icon="star" style={{ color: "#e65c00" }} />
+                                                                <FontAwesomeIcon className={animetionSkill} icon="star" style={{ color: "#e65c00" }} />
+                                                                <FontAwesomeIcon icon="star" style={{ color: "#adad85" }} />
+                                                                <FontAwesomeIcon icon="star" style={{ color: "#adad85" }} />
+                                                                </h6>
+
+                                                            </li>
+                                                            <li>
+                                                                <h6>
+                                                                    Listening : <FontAwesomeIcon className={animetionSkill} icon="star" style={{ color: "#e65c00" }} />
+                                                                <FontAwesomeIcon className={animetionSkill} icon="star" style={{ color: "#e65c00" }} />
+                                                                <FontAwesomeIcon className={animetionSkill} icon="star" style={{ color: "#e65c00" }} />
+                                                                <FontAwesomeIcon icon="star" style={{ color: "#adad85" }} />
+                                                                <FontAwesomeIcon icon="star" style={{ color: "#adad85" }} />
+                                                                </h6>
+                                                            </li>
+                                                            <li>
+                                                                <h6>
+                                                                    Writing : <FontAwesomeIcon className={animetionSkill} icon="star" style={{ color: "#e65c00" }} />
+                                                                <FontAwesomeIcon className={animetionSkill} icon="star" style={{ color: "#e65c00" }} />
+                                                                    <FontAwesomeIcon icon="star" style={{ color: "#adad85" }} />
+                                                                    <FontAwesomeIcon icon="star" style={{ color: "#adad85" }} />
+                                                                    <FontAwesomeIcon icon="star" style={{ color: "#adad85" }} />
+                                                                </h6>
+                                                            </li>
+                                                            <li>
+                                                                <h6>
+                                                                    Speeking : <FontAwesomeIcon className={animetionSkill} icon="star" style={{ color: "#e65c00" }} />
+                                                                <FontAwesomeIcon className={animetionSkill} icon="star" style={{ color: "#e65c00" }} />
+                                                                <FontAwesomeIcon className={animetionSkill} icon="star" style={{ color: "#e65c00" }} />
+                                                                <FontAwesomeIcon icon="star" style={{ color: "#adad85" }} />
+                                                                <FontAwesomeIcon icon="star" style={{ color: "#adad85" }} />
+                                                                </h6>
+                                                            </li>
 
                                                         </ul>
                                                     </div>
@@ -346,7 +493,7 @@ export default class ComponentIntroduceMyself extends Component {
                                             </div>
                                         </div>
 
-                                        <div className="col-xs-12 col-sm-12 col-md-6 col-lg-4 ">
+                                        <div className="col-xs-12 col-sm-12 col-md-6 col-lg-4 align-self-center">
                                             <div class="container-fluid rounded my-2" style={{ backgroundColor: "#ffb3b3", borderStyle: "solid ", borderColor: "Black", borderWidth: "3px" }}>
                                                 <h4>Professional Skills</h4>
                                                 <div class="container-fluid">
@@ -364,17 +511,18 @@ export default class ComponentIntroduceMyself extends Component {
                                             </div>
                                         </div>
 
-                                        <div className="col-xs-12 col-sm-12 col-md-6 col-lg-4 ">
+                                        <div className="col-xs-12 col-sm-12 col-md-6 col-lg-4 align-self-center">
                                             <div class="container-fluid rounded my-2" style={{ backgroundColor: "#ffb3b3", borderStyle: "solid ", borderColor: "Black", borderWidth: "3px" }}>
                                                 <h4>OTHER</h4>
                                                 <div class="container-fluid">
                                                     <div class="row">
                                                         <ul >
 
-                                                            <li><h6>Config Router,Switch(Cisco And Mikrotik) : Basic</h6></li>
+                                                            <li><h6>Travis ci</h6></li>
+                                                            <li><h6>Config Router,Switch(Cisco) : Basic</h6></li>
                                                             <li><h6>Oracle VM VirtualBox</h6></li>
                                                             <li><h6>Node Red</h6></li>
-                                                            <li><h6>knowledge protocal is Tcp/ip, Modbus And Ocpp</h6></li>
+                                                            <li><h6>Knowledgeable about protocal Tcp/ip, Modbus And Ocpp</h6></li>
 
                                                         </ul>
                                                     </div>
@@ -382,7 +530,7 @@ export default class ComponentIntroduceMyself extends Component {
                                             </div>
                                         </div>
 
-                                        <div className="col-xs-12 col-sm-12 col-md-6 col-lg-4 ">
+                                        <div className="col-xs-12 col-sm-12 col-md-6 col-lg-4 align-self-center">
                                             <div class="container-fluid rounded my-2 p-3" style={{ backgroundColor: "#ffb3b3", borderStyle: "solid ", borderColor: "Black", borderWidth: "3px" }}>
                                                 <div class="container-fluid">
                                                     <div class="row">

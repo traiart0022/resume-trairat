@@ -14,18 +14,18 @@ export default class ComponentFooter extends Component {
                             </div>
                             <div class="row">
 
-                                <div class="col-xs-12 col-sm-12 col-md-6 col-lg-4 my-2 ">
+                                <div class="col-xs-12 col-sm-12 col-md-6 col-lg-3 my-2 ">
 
                                     <div className="d-flex justify-content-center">
                                         <FontAwesomeIcon className="" icon="mobile" style={{ height: "60px", width: "60px", color: "blue" }} />
 
                                     </div>
                                     <div className="d-flex justify-content-center">
-                                        <h5><b>PHONE: 086-549-2804</b></h5>
+                                        <h5>PHONE: <b>086-549-2804</b></h5>
                                     </div>
                                 </div>
 
-                                <div class="col-xs-12 col-sm-12 col-md-6 col-lg-4 my-2 align-self-center">
+                                <div class="col-xs-12 col-sm-12 col-md-6 col-lg-3 my-2 align-self-center">
 
                                     <div className="d-flex justify-content-center ">
                                          <FontAwesomeIcon className="" icon="users" style={{ height: "60px", width: "60px", color: "blue" }} />    
@@ -34,20 +34,31 @@ export default class ComponentFooter extends Component {
                                                                       
                                     </div>
                                     <div className="d-flex justify-content-center">
-                                        <h5><b>FB: <a href='https://www.facebook.com/kok.chikago.5' target="blank">facebook</a></b></h5>
+                                        <h5>FB: <b><a href='https://www.facebook.com/kok.chikago.5' target="blank">facebook</a></b></h5>
                                         
                                     </div>
 
                                 </div>
 
-                                <div class="col-xs-12 col-sm-12 col-md-6 col-lg-4 my-2">
+                                <div class="col-xs-12 col-sm-12 col-md-6 col-lg-3 my-2">
 
                                     <div className="d-flex justify-content-center">
 
                                         <FontAwesomeIcon className="" icon="comments" style={{ height: "60px", width: "60px", color: "blue" }} />
                                     </div>
                                     <div className="d-flex justify-content-center">
-                                        <h5><b>LINE ID: 0897927930</b></h5>
+                                        <h5>LINE ID: <b>0897927930</b></h5>
+                                    </div>
+                                </div>
+
+                                <div class="col-xs-12 col-sm-12 col-md-6 col-lg-3 my-2">
+
+                                    <div className="d-flex justify-content-center">
+
+                                        <FontAwesomeIcon className="" icon="envelope" style={{ height: "60px", width: "60px", color: "blue" }} />
+                                    </div>
+                                    <div className="d-flex justify-content-center">
+                                        <h5>MAIL: <b>Trairat0022@gmail.com</b></h5>
                                     </div>
                                 </div>
 
