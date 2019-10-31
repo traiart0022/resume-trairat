@@ -109,20 +109,59 @@ var Overview_div = {
 }
 
 
-/* var Overview_responsive_1 = {
-    width: '100%',
-    height: '100%'
-} */
-
-var animetion = "faa-bounce animated"
-var animetionSkill = "faa-wrench animated"
-
-
 export default class ComponentIntroduceMyself extends Component {
+
+    constructor(props) {
+        super(props)
+
+        this.state = {
+            animetion1: "",
+            animetion2: "",
+            animetion3: "",
+            animetion4: "",
+            animetion5: "",
+            animetionSkill:"faa-wrench animated",
+        }
+    }
+
+    componentDidMount() {
+
+        setInterval(() => {
+
+            setTimeout(() => {
+                this.setState({
+                    animetion1: "faa-bounce animated"
+                })
+            }, 100);
+            setTimeout(() => {
+                this.setState({
+                    animetion2: "faa-bounce animated"
+                })
+            }, 200);
+            setTimeout(() => {
+                this.setState({
+                    animetion3: "faa-bounce animated"
+                })
+            }, 300);
+            setTimeout(() => {
+                this.setState({
+                    animetion4: "faa-bounce animated"
+                })
+            }, 400);
+            setTimeout(() => {
+                this.setState({
+                    animetion5: "faa-bounce animated"
+                })
+            }, 500);
+
+        }, 500);
+
+
+    }
 
 
     render() {
-
+        const { animetion1, animetion2, animetion3, animetion4, animetion5, animetionSkill } = this.state
         return (
             <div>
                 <Header />
@@ -143,13 +182,66 @@ export default class ComponentIntroduceMyself extends Component {
                             <div className="col-xs-12 col-sm-6 col-md-6 col-lg-4 align-self-center">
                                 <div class="container-fluid rounded p-5 my-2" style={{ backgroundColor: "#8cd98c", borderStyle: "solid ", borderColor: "Black", borderWidth: "3px" }}>
                                     <ul>
-                                        <li>Name: <b>Mr. Trirat Sukphong</b></li>
-                                        <li>Nickname: <b>Duck</b></li>
-                                        <li>Date of Birth: <b>19 March 1997</b></li>
-                                        <li>Marital status: <b>Single</b></li>
-                                        <li>Address:<b> 8 Soi-Wutthakat 42, Wutthakat Road
-                                            - Bang Kho Subdistrict - Chom Thong District
-                                        Bangkok 10150</b></li>
+
+                                        <li>
+                                            <div className="d-flex justify-content-start">
+                                                <div className="" style={{ color: "", fontSize: "18px", }}>
+                                                    Name:
+                                                </div>
+                                                &nbsp;
+                                                <div className="" style={{ color: "#e65c00", fontSize: "18px", }}>
+                                                    Mr.Trirat Sukphong
+                                                </div>
+                                            </div>
+                                        </li>
+
+                                        <li>
+                                            <div className="d-flex justify-content-start">
+                                                <div className="" style={{ color: "", fontSize: "18px", }}>
+                                                    Nickname:
+                                            </div >
+                                                &nbsp;
+                                                <div className="" style={{ color: "#e65c00", fontSize: "18px", }}>
+                                                    Duck
+                                                </div>
+                                            </div>
+                                        </li>
+
+                                        <li>
+                                            <div className="d-flex justify-content-start">
+                                                <div className="" style={{ color: "", fontSize: "18px", }}>
+                                                    Date of Birth:
+                                            </div>
+                                                &nbsp;
+                                                <div className="" style={{ color: "#e65c00", fontSize: "18px", }}>
+                                                    19 March 1997
+                                                </div>
+                                            </div>
+                                        </li>
+
+                                        <li>
+                                            <div className="d-flex justify-content-start">
+                                                <div className="" style={{ color: "", fontSize: "18px", }}>
+                                                    Marital status:
+                                                </div>
+                                                &nbsp;
+                                                <div className="" style={{ color: "#e65c00", fontSize: "18px", }}>
+                                                    Single
+                                                </div>
+                                            </div>
+                                        </li>
+
+                                        <li>
+                                            <div className="d-flex justify-content-start">
+                                                <div className="" style={{ color: "", fontSize: "18px", }}>
+                                                    Address:
+                                                </div>
+                                                &nbsp;
+                                                <div className="" style={{ color: "#e65c00", fontSize: "18px", }}>
+                                                    8 Soi-Wutthakat 42, Wutthakat Road- Bang Kho Subdistrict - Chom Thong DistrictBangkok 10150
+                                                </div>
+                                            </div>
+                                        </li>
                                     </ul>
 
                                 </div>
@@ -158,22 +250,74 @@ export default class ComponentIntroduceMyself extends Component {
                             <div className="col-xs-12 col-sm-6 col-md-6 col-lg-4 align-self-center">
                                 <div class="container-fluid rounded p-5 my-2" style={{ backgroundColor: "#8cd98c", borderStyle: "solid ", borderColor: "Black", borderWidth: "3px" }}>
                                     <ul>
-                                        <li>Nationality: <b>Thai</b></li>
-                                        <li>weight: <b>47 kg</b></li>
-                                        <li>height: <b>166 cm</b></li>
-                                        <li><b>No military obligations</b></li>
-                                        <li>Hobby: </li>
-                                        <b>Play Mobile Games(ROV)</b> <FontAwesomeIcon icon="star" className={animetion} style={{ color: "#e65c00" }} />
-                                        <FontAwesomeIcon className={animetion} icon="star" style={{ color: "#e65c00" }} />
-                                        <FontAwesomeIcon className={animetion} icon="star" style={{ color: "#e65c00" }} />
-                                        <FontAwesomeIcon className={animetion} icon="star" style={{ color: "#e65c00" }} />
-                                        <FontAwesomeIcon className={animetion} icon="star" style={{ color: "#e65c00" }} />
+                                        <li>
+                                            <div className="d-flex justify-content-start">
+                                                <div className="" style={{ color: "", fontSize: "18px", }}>
+                                                    Nationality:
+                                            </div>
+                                                &nbsp;
+                                                <div className="" style={{ color: "#e65c00", fontSize: "18px", }}>
+                                                    Thai
+                                                </div>
+                                            </div>
+                                        </li>
+                                        <li>
 
-                                        <b>Play Football</b><FontAwesomeIcon icon="star" className={animetion} style={{ color: "#e65c00" }} />
-                                        <FontAwesomeIcon className={animetion} icon="star" style={{ color: "#e65c00" }} />
-                                        <FontAwesomeIcon className={animetion} icon="star" style={{ color: "#e65c00" }} />
-                                        <FontAwesomeIcon className={animetion} icon="star" style={{ color: "#e65c00" }} />
-                                        <FontAwesomeIcon className={animetion} icon="star" style={{ color: "#e65c00" }} />
+                                            <div className="d-flex justify-content-start">
+                                                <div className="" style={{ color: "", fontSize: "18px", }}>
+                                                    weight:
+                                            </div>
+                                                &nbsp;
+                                                <div className="" style={{ color: "#e65c00", fontSize: "18px", }}>
+                                                    47 kg
+                                                </div>
+                                            </div>
+                                        </li>
+
+                                        <li>
+                                            <div className="d-flex justify-content-start">
+                                                <div className="" style={{ color: "", fontSize: "18px", }}>
+                                                    height:
+                                                </div>
+                                                &nbsp;
+                                                <div className="" style={{ color: "#e65c00", fontSize: "18px", }}>
+                                                    166 cm
+                                                </div>
+                                            </div>
+
+
+                                        </li>
+
+                                        <li>
+
+                                            <div className="d-flex justify-content-start">
+                                                <div className="" style={{ color: "#e65c00", fontSize: "18px", }}>
+                                                    No military obligations
+                                                </div>
+                                            </div>
+
+
+                                        </li>
+                                        <li>Hobby: </li>
+                                        <div className="d-flex justify-content-start">
+                                            <div className="" style={{ color: "#e65c00", fontSize: "18px", }}>
+                                                Play Mobile Games(ROV) <FontAwesomeIcon icon="star" className={animetion1} style={{ color: "#e65c00" }} />
+                                                <FontAwesomeIcon className={animetion2} icon="star" style={{ color: "#e65c00" }} />
+                                                <FontAwesomeIcon className={animetion3} icon="star" style={{ color: "#e65c00" }} />
+                                                <FontAwesomeIcon className={animetion4} icon="star" style={{ color: "#e65c00" }} />
+                                                <FontAwesomeIcon className={animetion5} icon="star" style={{ color: "#e65c00" }} />
+                                            </div>
+                                        </div>
+
+                                        <div className="d-flex justify-content-start">
+                                            <div className="" style={{ color: "#e65c00", fontSize: "18px", }}>
+                                                Play Football<FontAwesomeIcon icon="star" className={animetion1} style={{ color: "#e65c00" }} />
+                                                <FontAwesomeIcon className={animetion2} icon="star" style={{ color: "#e65c00" }} />
+                                                <FontAwesomeIcon className={animetion3} icon="star" style={{ color: "#e65c00" }} />
+                                                <FontAwesomeIcon className={animetion4} icon="star" style={{ color: "#e65c00" }} />
+                                                <FontAwesomeIcon className={animetion5} icon="star" style={{ color: "#e65c00" }} />
+                                            </div>
+                                        </div>
 
 
                                     </ul>
@@ -315,34 +459,58 @@ export default class ComponentIntroduceMyself extends Component {
 
                                                             <li>Front-End</li>
 
-                                                            <h6>
-                                                                React : <FontAwesomeIcon className={animetionSkill} icon="star" style={{ color: "#e65c00" }} />
-                                                                <FontAwesomeIcon className={animetionSkill} icon="star" style={{ color: "#e65c00" }} />
-                                                                <FontAwesomeIcon className={animetionSkill} icon="star" style={{ color: "#e65c00" }} />
-                                                                <FontAwesomeIcon className={animetionSkill} icon="star" style={{ color: "#e65c00" }} />
-                                                                <FontAwesomeIcon icon="star" style={{ color: "#adad85" }} />
-                                                            </h6>
-                                                            <h6>
-                                                                CSS3 : <FontAwesomeIcon className={animetionSkill} icon="star" style={{ color: "#e65c00" }} />
-                                                                <FontAwesomeIcon className={animetionSkill} icon="star" style={{ color: "#e65c00" }} />
-                                                                <FontAwesomeIcon className={animetionSkill} icon="star" style={{ color: "#e65c00" }} />
-                                                                <FontAwesomeIcon icon="star" style={{ color: "#adad85" }} />
-                                                                <FontAwesomeIcon icon="star" style={{ color: "#adad85" }} />
-                                                            </h6>
-                                                            <h6>
-                                                                HTML5 : <FontAwesomeIcon className={animetionSkill} icon="star" style={{ color: "#e65c00" }} />
-                                                                <FontAwesomeIcon className={animetionSkill} icon="star" style={{ color: "#e65c00" }} />
-                                                                <FontAwesomeIcon className={animetionSkill} icon="star" style={{ color: "#e65c00" }} />
-                                                                <FontAwesomeIcon icon="star" style={{ color: "#adad85" }} />
-                                                                <FontAwesomeIcon icon="star" style={{ color: "#adad85" }} />
-                                                            </h6>
-                                                            <h6>Bootstrap : <FontAwesomeIcon className={animetionSkill} icon="star" style={{ color: "#e65c00" }} />
-                                                                <FontAwesomeIcon className={animetionSkill} icon="star" style={{ color: "#e65c00" }} />
-                                                                <FontAwesomeIcon className={animetionSkill} icon="star" style={{ color: "#e65c00" }} />
-                                                                <FontAwesomeIcon className={animetionSkill} icon="star" style={{ color: "#e65c00" }} />
-                                                                <FontAwesomeIcon icon="star" style={{ color: "#adad85" }} />
-                                                            </h6>
+                                                            <div className="d-flex justify-content-between">
 
+                                                                <div>
+                                                                    <h6> React :</h6>
+                                                                </div>
+                                                                <div>
+                                                                    <FontAwesomeIcon className={animetionSkill} icon="star" style={{ color: "#e65c00" }} />
+                                                                    <FontAwesomeIcon className={animetionSkill} icon="star" style={{ color: "#e65c00" }} />
+                                                                    <FontAwesomeIcon className={animetionSkill} icon="star" style={{ color: "#e65c00" }} />
+                                                                    <FontAwesomeIcon className={animetionSkill} icon="star" style={{ color: "#e65c00" }} />
+                                                                    <FontAwesomeIcon icon="star" style={{ color: "#adad85" }} />
+                                                                </div>
+                                                            </div>
+
+                                                            <div className="d-flex justify-content-between">
+                                                                <div>
+                                                                    <h6>CSS3 :</h6>
+                                                                </div>
+                                                                <div>
+                                                                    <FontAwesomeIcon className={animetionSkill} icon="star" style={{ color: "#e65c00" }} />
+                                                                    <FontAwesomeIcon className={animetionSkill} icon="star" style={{ color: "#e65c00" }} />
+                                                                    <FontAwesomeIcon className={animetionSkill} icon="star" style={{ color: "#e65c00" }} />
+                                                                    <FontAwesomeIcon icon="star" style={{ color: "#adad85" }} />
+                                                                    <FontAwesomeIcon icon="star" style={{ color: "#adad85" }} />
+                                                                </div>
+                                                            </div>
+                                                            <div className="d-flex justify-content-between">
+
+                                                                <div>
+                                                                    <h6>HTML5 :</h6>
+                                                                </div>
+                                                                <div>
+                                                                    <FontAwesomeIcon className={animetionSkill} icon="star" style={{ color: "#e65c00" }} />
+                                                                    <FontAwesomeIcon className={animetionSkill} icon="star" style={{ color: "#e65c00" }} />
+                                                                    <FontAwesomeIcon className={animetionSkill} icon="star" style={{ color: "#e65c00" }} />
+                                                                    <FontAwesomeIcon icon="star" style={{ color: "#adad85" }} />
+                                                                    <FontAwesomeIcon icon="star" style={{ color: "#adad85" }} />
+                                                                </div>
+                                                            </div>
+                                                            <div className="d-flex justify-content-between">
+                                                                <div>
+                                                                    <h6>Bootstrap :</h6>
+                                                                </div>
+                                                                <div>
+                                                                    <FontAwesomeIcon className={animetionSkill} icon="star" style={{ color: "#e65c00" }} />
+                                                                    <FontAwesomeIcon className={animetionSkill} icon="star" style={{ color: "#e65c00" }} />
+                                                                    <FontAwesomeIcon className={animetionSkill} icon="star" style={{ color: "#e65c00" }} />
+                                                                    <FontAwesomeIcon className={animetionSkill} icon="star" style={{ color: "#e65c00" }} />
+                                                                    <FontAwesomeIcon icon="star" style={{ color: "#adad85" }} />
+                                                                </div>
+
+                                                            </div>
 
                                                         </div>
 
@@ -350,34 +518,59 @@ export default class ComponentIntroduceMyself extends Component {
 
                                                             <li>Back-End</li>
 
-                                                            <h6>
-                                                                Node js : <FontAwesomeIcon className={animetionSkill} icon="star" style={{ color: "#e65c00" }} />
-                                                                <FontAwesomeIcon className={animetionSkill} icon="star" style={{ color: "#e65c00" }} />
-                                                                <FontAwesomeIcon className={animetionSkill} icon="star" style={{ color: "#e65c00" }} />
-                                                                <FontAwesomeIcon icon="star" style={{ color: "#adad85" }} />
-                                                                <FontAwesomeIcon icon="star" style={{ color: "#adad85" }} />
-                                                            </h6>
-                                                            <h6>
-                                                                Express : <FontAwesomeIcon className={animetionSkill} icon="star" style={{ color: "#e65c00" }} />
-                                                                <FontAwesomeIcon className={animetionSkill} icon="star" style={{ color: "#e65c00" }} />
-                                                                <FontAwesomeIcon className={animetionSkill} icon="star" style={{ color: "#e65c00" }} />
-                                                                <FontAwesomeIcon icon="star" style={{ color: "#adad85" }} />
-                                                                <FontAwesomeIcon icon="star" style={{ color: "#adad85" }} />
-                                                            </h6>
-                                                            <h6>
-                                                                Mysql : <FontAwesomeIcon className={animetionSkill} icon="star" style={{ color: "#e65c00" }} />
-                                                                <FontAwesomeIcon className={animetionSkill} icon="star" style={{ color: "#e65c00" }} />
-                                                                <FontAwesomeIcon className={animetionSkill} icon="star" style={{ color: "#e65c00" }} />
-                                                                <FontAwesomeIcon icon="star" style={{ color: "#adad85" }} />
-                                                                <FontAwesomeIcon icon="star" style={{ color: "#adad85" }} />
-                                                            </h6>
-                                                            <h6>
-                                                                Firebase : <FontAwesomeIcon className={animetionSkill} icon="star" style={{ color: "#e65c00" }} />
-                                                                <FontAwesomeIcon className={animetionSkill} icon="star" style={{ color: "#e65c00" }} />
-                                                                <FontAwesomeIcon className={animetionSkill} icon="star" style={{ color: "#e65c00" }} />
-                                                                <FontAwesomeIcon icon="star" style={{ color: "#adad85" }} />
-                                                                <FontAwesomeIcon icon="star" style={{ color: "#adad85" }} />
-                                                            </h6>
+                                                            <div className="d-flex justify-content-between">
+                                                                <div>
+                                                                    <h6>Node js :</h6>
+                                                                </div>
+                                                                <div>
+                                                                    <FontAwesomeIcon className={animetionSkill} icon="star" style={{ color: "#e65c00" }} />
+                                                                    <FontAwesomeIcon className={animetionSkill} icon="star" style={{ color: "#e65c00" }} />
+                                                                    <FontAwesomeIcon className={animetionSkill} icon="star" style={{ color: "#e65c00" }} />
+                                                                    <FontAwesomeIcon icon="star" style={{ color: "#adad85" }} />
+                                                                    <FontAwesomeIcon icon="star" style={{ color: "#adad85" }} />
+                                                                </div>
+
+                                                            </div>
+
+                                                            <div className="d-flex justify-content-between">
+                                                                <div>
+                                                                    <h6>Express :</h6>
+                                                                </div>
+                                                                <div>
+                                                                    <FontAwesomeIcon className={animetionSkill} icon="star" style={{ color: "#e65c00" }} />
+                                                                    <FontAwesomeIcon className={animetionSkill} icon="star" style={{ color: "#e65c00" }} />
+                                                                    <FontAwesomeIcon className={animetionSkill} icon="star" style={{ color: "#e65c00" }} />
+                                                                    <FontAwesomeIcon icon="star" style={{ color: "#adad85" }} />
+                                                                    <FontAwesomeIcon icon="star" style={{ color: "#adad85" }} />
+                                                                </div>
+
+                                                            </div>
+                                                            <div className="d-flex justify-content-between">
+                                                                <div>
+                                                                    <h6>Mysql :</h6>
+                                                                </div>
+                                                                <div>
+                                                                    <FontAwesomeIcon className={animetionSkill} icon="star" style={{ color: "#e65c00" }} />
+                                                                    <FontAwesomeIcon className={animetionSkill} icon="star" style={{ color: "#e65c00" }} />
+                                                                    <FontAwesomeIcon className={animetionSkill} icon="star" style={{ color: "#e65c00" }} />
+                                                                    <FontAwesomeIcon icon="star" style={{ color: "#adad85" }} />
+                                                                    <FontAwesomeIcon icon="star" style={{ color: "#adad85" }} />
+                                                                </div>
+
+                                                            </div>
+                                                            <div className="d-flex justify-content-between">
+                                                                <div>
+                                                                    <h6>Firebase :</h6>
+                                                                </div>
+                                                                <div>
+                                                                    <FontAwesomeIcon className={animetionSkill} icon="star" style={{ color: "#e65c00" }} />
+                                                                    <FontAwesomeIcon className={animetionSkill} icon="star" style={{ color: "#e65c00" }} />
+                                                                    <FontAwesomeIcon className={animetionSkill} icon="star" style={{ color: "#e65c00" }} />
+                                                                    <FontAwesomeIcon icon="star" style={{ color: "#adad85" }} />
+                                                                    <FontAwesomeIcon icon="star" style={{ color: "#adad85" }} />
+                                                                </div>
+
+                                                            </div>
 
 
                                                         </div>
@@ -400,40 +593,64 @@ export default class ComponentIntroduceMyself extends Component {
                                                         <ul >
 
                                                             <li>
-                                                                <h6>
-                                                                    Visual Basic.net : <FontAwesomeIcon className={animetionSkill} icon="star" style={{ color: "#e65c00" }} />
-                                                                <FontAwesomeIcon className={animetionSkill} icon="star" style={{ color: "#e65c00" }} />
-                                                                <FontAwesomeIcon className={animetionSkill} icon="star" style={{ color: "#e65c00" }} />
-                                                                <FontAwesomeIcon icon="star" style={{ color: "#adad85" }} />
-                                                                <FontAwesomeIcon icon="star" style={{ color: "#adad85" }} />
-                                                                </h6>
+                                                                <div className="d-flex justify-content-between">
+                                                                    <div className="mr-5">
+                                                                        <h6>Visual Basic.net :</h6>
+                                                                    </div>
+                                                                    <div>
+                                                                        <FontAwesomeIcon className={animetionSkill} icon="star" style={{ color: "#e65c00" }} />
+                                                                        <FontAwesomeIcon className={animetionSkill} icon="star" style={{ color: "#e65c00" }} />
+                                                                        <FontAwesomeIcon className={animetionSkill} icon="star" style={{ color: "#e65c00" }} />
+                                                                        <FontAwesomeIcon icon="star" style={{ color: "#adad85" }} />
+                                                                        <FontAwesomeIcon icon="star" style={{ color: "#adad85" }} />
+                                                                    </div>
+
+                                                                </div>
                                                             </li>
                                                             <li>
-                                                                <h6>
-                                                                    Linq : <FontAwesomeIcon className={animetionSkill} icon="star" style={{ color: "#e65c00" }} />
-                                                                <FontAwesomeIcon className={animetionSkill} icon="star" style={{ color: "#e65c00" }} />
-                                                                <FontAwesomeIcon className={animetionSkill} icon="star" style={{ color: "#e65c00" }} />
-                                                                <FontAwesomeIcon icon="star" style={{ color: "#adad85" }} />
-                                                                <FontAwesomeIcon icon="star" style={{ color: "#adad85" }} />
-                                                                </h6>
+                                                                <div className="d-flex justify-content-between">
+                                                                    <div className="mr-5">
+                                                                        <h6>Linq :</h6>
+                                                                    </div>
+                                                                    <div>
+                                                                        <FontAwesomeIcon className={animetionSkill} icon="star" style={{ color: "#e65c00" }} />
+                                                                        <FontAwesomeIcon className={animetionSkill} icon="star" style={{ color: "#e65c00" }} />
+                                                                        <FontAwesomeIcon className={animetionSkill} icon="star" style={{ color: "#e65c00" }} />
+                                                                        <FontAwesomeIcon icon="star" style={{ color: "#adad85" }} />
+                                                                        <FontAwesomeIcon icon="star" style={{ color: "#adad85" }} />
+                                                                    </div>
+
+                                                                </div>
                                                             </li>
                                                             <li>
-                                                                <h6>
-                                                                    Sql Server : <FontAwesomeIcon className={animetionSkill} icon="star" style={{ color: "#e65c00" }} />
-                                                                <FontAwesomeIcon className={animetionSkill} icon="star" style={{ color: "#e65c00" }} />
-                                                                <FontAwesomeIcon className={animetionSkill} icon="star" style={{ color: "#e65c00" }} />
-                                                                <FontAwesomeIcon icon="star" style={{ color: "#adad85" }} />
-                                                                <FontAwesomeIcon icon="star" style={{ color: "#adad85" }} />
-                                                                </h6>
+                                                                <div className="d-flex justify-content-between">
+                                                                    <div className="mr-5">
+                                                                        <h6> Sql Server :</h6>
+                                                                    </div>
+                                                                    <div>
+                                                                        <FontAwesomeIcon className={animetionSkill} icon="star" style={{ color: "#e65c00" }} />
+                                                                        <FontAwesomeIcon className={animetionSkill} icon="star" style={{ color: "#e65c00" }} />
+                                                                        <FontAwesomeIcon className={animetionSkill} icon="star" style={{ color: "#e65c00" }} />
+                                                                        <FontAwesomeIcon icon="star" style={{ color: "#adad85" }} />
+                                                                        <FontAwesomeIcon icon="star" style={{ color: "#adad85" }} />
+                                                                    </div>
+
+                                                                </div>
                                                             </li>
                                                             <li>
-                                                                <h6>
-                                                                    Report Viewer : <FontAwesomeIcon className={animetionSkill} icon="star" style={{ color: "#e65c00" }} />
-                                                                <FontAwesomeIcon className={animetionSkill} icon="star" style={{ color: "#e65c00" }} />
-                                                                <FontAwesomeIcon className={animetionSkill} icon="star" style={{ color: "#e65c00" }} />
-                                                                <FontAwesomeIcon icon="star" style={{ color: "#adad85" }} />
-                                                                <FontAwesomeIcon icon="star" style={{ color: "#adad85" }} />
-                                                                </h6>
+                                                                <div className="d-flex justify-content-between">
+                                                                    <div className="mr-5">
+                                                                        <h6>Report Viewer :</h6>
+                                                                    </div>
+                                                                    <div>
+                                                                        <FontAwesomeIcon className={animetionSkill} icon="star" style={{ color: "#e65c00" }} />
+                                                                        <FontAwesomeIcon className={animetionSkill} icon="star" style={{ color: "#e65c00" }} />
+                                                                        <FontAwesomeIcon className={animetionSkill} icon="star" style={{ color: "#e65c00" }} />
+                                                                        <FontAwesomeIcon icon="star" style={{ color: "#adad85" }} />
+                                                                        <FontAwesomeIcon icon="star" style={{ color: "#adad85" }} />
+                                                                    </div>
+
+                                                                </div>
                                                             </li>
 
                                                         </ul>
@@ -450,41 +667,65 @@ export default class ComponentIntroduceMyself extends Component {
                                                         <ul >
 
                                                             <li>
-                                                                <h6>
-                                                                    Reading : <FontAwesomeIcon className={animetionSkill} icon="star" style={{ color: "#e65c00" }} />
-                                                                <FontAwesomeIcon className={animetionSkill} icon="star" style={{ color: "#e65c00" }} />
-                                                                <FontAwesomeIcon className={animetionSkill} icon="star" style={{ color: "#e65c00" }} />
-                                                                <FontAwesomeIcon icon="star" style={{ color: "#adad85" }} />
-                                                                <FontAwesomeIcon icon="star" style={{ color: "#adad85" }} />
-                                                                </h6>
+                                                                <div className="d-flex justify-content-between">
+                                                                    <div className="mr-5">
+                                                                        <h6>Reading :</h6>
+                                                                    </div>
+                                                                    <div>
+                                                                        <FontAwesomeIcon className={animetionSkill} icon="star" style={{ color: "#e65c00" }} />
+                                                                        <FontAwesomeIcon className={animetionSkill} icon="star" style={{ color: "#e65c00" }} />
+                                                                        <FontAwesomeIcon className={animetionSkill} icon="star" style={{ color: "#e65c00" }} />
+                                                                        <FontAwesomeIcon icon="star" style={{ color: "#adad85" }} />
+                                                                        <FontAwesomeIcon icon="star" style={{ color: "#adad85" }} />
 
+                                                                    </div>
+
+                                                                </div>
                                                             </li>
                                                             <li>
-                                                                <h6>
-                                                                    Listening : <FontAwesomeIcon className={animetionSkill} icon="star" style={{ color: "#e65c00" }} />
-                                                                <FontAwesomeIcon className={animetionSkill} icon="star" style={{ color: "#e65c00" }} />
-                                                                <FontAwesomeIcon className={animetionSkill} icon="star" style={{ color: "#e65c00" }} />
-                                                                <FontAwesomeIcon icon="star" style={{ color: "#adad85" }} />
-                                                                <FontAwesomeIcon icon="star" style={{ color: "#adad85" }} />
-                                                                </h6>
+                                                                <div className="d-flex justify-content-between">
+                                                                    <div className="mr-5">
+                                                                        <h6>Listening :</h6>
+                                                                    </div>
+                                                                    <div>
+                                                                        <FontAwesomeIcon className={animetionSkill} icon="star" style={{ color: "#e65c00" }} />
+                                                                        <FontAwesomeIcon className={animetionSkill} icon="star" style={{ color: "#e65c00" }} />
+                                                                        <FontAwesomeIcon className={animetionSkill} icon="star" style={{ color: "#e65c00" }} />
+                                                                        <FontAwesomeIcon icon="star" style={{ color: "#adad85" }} />
+                                                                        <FontAwesomeIcon icon="star" style={{ color: "#adad85" }} />
+                                                                    </div>
+
+                                                                </div>
                                                             </li>
                                                             <li>
-                                                                <h6>
-                                                                    Writing : <FontAwesomeIcon className={animetionSkill} icon="star" style={{ color: "#e65c00" }} />
-                                                                <FontAwesomeIcon className={animetionSkill} icon="star" style={{ color: "#e65c00" }} />
-                                                                    <FontAwesomeIcon icon="star" style={{ color: "#adad85" }} />
-                                                                    <FontAwesomeIcon icon="star" style={{ color: "#adad85" }} />
-                                                                    <FontAwesomeIcon icon="star" style={{ color: "#adad85" }} />
-                                                                </h6>
+                                                                <div className="d-flex justify-content-between">
+                                                                    <div className="mr-5">
+                                                                        <h6>Writing :</h6>
+                                                                    </div>
+                                                                    <div>
+                                                                        <FontAwesomeIcon className={animetionSkill} icon="star" style={{ color: "#e65c00" }} />
+                                                                        <FontAwesomeIcon className={animetionSkill} icon="star" style={{ color: "#e65c00" }} />
+                                                                        <FontAwesomeIcon icon="star" style={{ color: "#adad85" }} />
+                                                                        <FontAwesomeIcon icon="star" style={{ color: "#adad85" }} />
+                                                                        <FontAwesomeIcon icon="star" style={{ color: "#adad85" }} />
+                                                                    </div>
+
+                                                                </div>
                                                             </li>
                                                             <li>
-                                                                <h6>
-                                                                    Speeking : <FontAwesomeIcon className={animetionSkill} icon="star" style={{ color: "#e65c00" }} />
-                                                                <FontAwesomeIcon className={animetionSkill} icon="star" style={{ color: "#e65c00" }} />
-                                                                <FontAwesomeIcon className={animetionSkill} icon="star" style={{ color: "#e65c00" }} />
-                                                                <FontAwesomeIcon icon="star" style={{ color: "#adad85" }} />
-                                                                <FontAwesomeIcon icon="star" style={{ color: "#adad85" }} />
-                                                                </h6>
+                                                                <div className="d-flex justify-content-between">
+                                                                    <div className="mr-5">
+                                                                        <h6>Speeking :</h6>
+                                                                    </div>
+                                                                    <div>
+                                                                        <FontAwesomeIcon className={animetionSkill} icon="star" style={{ color: "#e65c00" }} />
+                                                                        <FontAwesomeIcon className={animetionSkill} icon="star" style={{ color: "#e65c00" }} />
+                                                                        <FontAwesomeIcon className={animetionSkill} icon="star" style={{ color: "#e65c00" }} />
+                                                                        <FontAwesomeIcon icon="star" style={{ color: "#adad85" }} />
+                                                                        <FontAwesomeIcon icon="star" style={{ color: "#adad85" }} />
+                                                                    </div>
+
+                                                                </div>
                                                             </li>
 
                                                         </ul>
@@ -652,12 +893,12 @@ export default class ComponentIntroduceMyself extends Component {
                                                     </div>
 
                                                     <div class="col-xs-12 col-sm-12 col-md-12 col-lg-12 my-2 d-flex justify-content-center">
-                                                        <button class="btn btn-warning" >
+                                                        <button class="btn btn-warning " >
                                                             <a href="http://eve.ke.in.th/" target="blank">
                                                                 <h4>
-                                                                    <FontAwesomeIcon icon="solar-panel" style={{ height: "30px", width: "30px", color: "blue" }} />&nbsp;
+                                                                    <FontAwesomeIcon className="faa-burst animated" icon="solar-panel" style={{ height: "30px", width: "30px", color: "blue" }} />&nbsp;
                                                                     link to eve.ke.in.th
-                                                                    &nbsp;<FontAwesomeIcon icon="sun" style={{ height: "30px", width: "30px", color: "blue" }} />
+                                                                    &nbsp;<FontAwesomeIcon className="faa-spin animated" icon="sun" style={{ height: "30px", width: "30px", color: "blue" }} />
                                                                 </h4>
                                                             </a>
                                                         </button>
@@ -825,7 +1066,7 @@ export default class ComponentIntroduceMyself extends Component {
                                                     <Link to={Pdf} target="blank" download><button className="btn btn-success" >Download DOCUMENTS</button></Link>
                                                 </div>
                                                 <div className="d-flex justify-content-center">
-                                                    <Link to={'/Doc'}><button className="btn btn-success">LINK TO DOCUMENTS </button></Link>
+                                                    <Link to={'/Doc'}><button className="btn btn-success faa-vertical animated">LINK TO DOCUMENTS </button></Link>
                                                 </div>
                                                 <div class="row">
 
@@ -909,7 +1150,7 @@ export default class ComponentIntroduceMyself extends Component {
                                                         <div className="d-flex justify-content-center ">
 
                                                             <a target="blank" href="https://www.youtube.com/watch?v=eBMgtnE_wLU&fbclid=IwAR0AvGJ39c9Bof5AOntUpB8PQG1IeF-gDarCmdSVek1PyAQ8TU9lzbGiQBQ">
-                                                                <button className="btn btn-success" >LINK To www.youtube.com</button>
+                                                                <button className="btn btn-success faa-vertical animated" >LINK To www.youtube.com</button>
                                                             </a>
 
                                                         </div>
