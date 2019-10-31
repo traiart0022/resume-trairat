@@ -1,14 +1,5 @@
 import React, { Component } from 'react'
 import Cookies from "universal-cookie";
-import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
-import { library } from '@fortawesome/fontawesome-svg-core'
-import { fab } from '@fortawesome/free-brands-svg-icons'
-import {
-
-} from '@fortawesome/free-solid-svg-icons'
-
-library.add(fab,
-)
 
 const cookies = new Cookies();
 
@@ -26,13 +17,13 @@ export default class ComponentLogin extends Component {
 
   componentDidMount() {
     if (this.state.Cookies !== "") {
-      cookies.remove("ComponentOverview", { path: '/ComponentOverview' });
+      cookies.remove("cookies", { path: '/cookies' });
     }
     //console.log(this.state.Cookies)
   }
 
   componentWillMount() {
-    this.setState({ Cookies: cookies.get('ComponentOverview') })
+    this.setState({ Cookies: cookies.get('cookies') })
   }
 
   handleSubmit(e) {
@@ -41,12 +32,13 @@ export default class ComponentLogin extends Component {
 
     if ((this.state.UserName !== "") && (this.state.Password !== "")) {
 
-      this.setState({ Cookies: cookies.get('ComponentOverview') })
+      this.setState({ Cookies: cookies.get('cookies') })
 
       if ((this.state.UserName === "Trairat") && (this.state.Password === "password1234")) {
 
-        cookies.set("ComponentOverview", this.state.UserName, { path: "/ComponentOverview" });
+        cookies.set("cookies", this.state.UserName, { path: "/cookies" });
         window.location.replace("/ComponentOverview")
+
 
       } else {
 
