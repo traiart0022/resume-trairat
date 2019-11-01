@@ -1,6 +1,6 @@
 import React, { Component } from 'react'
 import Cookies from "universal-cookie";
-
+import { Redirect } from 'react-router-dom'
 const cookies = new Cookies();
 
 export default class ComponentLogin extends Component {
@@ -10,21 +10,26 @@ export default class ComponentLogin extends Component {
     this.state = {
       UserName: "",
       Password: "",
-      Cookies: ""
+      Cookies: "",
+      redirect: false
     }
     this.handleSubmit = this.handleSubmit.bind(this);
   }
 
-  componentDidMount() {
-    if (this.state.Cookies !== "") {
-      cookies.remove("cookies", { path: '/cookies' });
-    }
-    //console.log(this.state.Cookies)
-  }
+
 
   componentWillMount() {
     this.setState({ Cookies: cookies.get('cookies') })
   }
+
+  componentDidMount() {
+    if (this.state.Cookies !== "") {
+      cookies.remove("cookies", { path: '/' });
+    }
+    //console.log(this.state.Cookies)
+  }
+
+
 
   handleSubmit(e) {
     e.preventDefault();
@@ -34,12 +39,14 @@ export default class ComponentLogin extends Component {
 
       this.setState({ Cookies: cookies.get('cookies') })
 
-      if ((this.state.UserName === "Trairat") && (this.state.Password === "password1234")) {
+      if ((this.state.UserName === "Trairat" || this.state.UserName === "trairat") && (this.state.Password === "password1234")) {
 
-        cookies.set("cookies", this.state.UserName, { path: "/cookies" });
-        window.location.replace("/ComponentOverview")
-
-
+        cookies.set("cookies", this.state.UserName, { path: "/" });
+        this.setState({
+          redirect: true
+        })
+        /* window.location.replace("/ComponentOverview") */
+        
       } else {
 
         alert("Username or Password is Incorrect")
@@ -47,7 +54,7 @@ export default class ComponentLogin extends Component {
           UserName: "",
           Password: ""
         })
-        
+
       }
 
     } else {
@@ -56,7 +63,15 @@ export default class ComponentLogin extends Component {
 
   }
 
+
   render() {
+
+    const { redirect } = this.state;
+
+     if (redirect === true) {
+       return <Redirect to='/ComponentOverview'/>;
+     }
+
     return (
       <div>
         <div class="container-fluid mt-5">
@@ -64,6 +79,7 @@ export default class ComponentLogin extends Component {
             <div class="col-xs-12 col-sm-12 col-md-6 col-lg-4 " >
 
               <div class="container-fluid rounded " style={{ backgroundColor: "#66ff99" }}>
+
                 <form onSubmit={this.handleSubmit}>
                   <div class="form-group ">
                     <label>User Name</label>
@@ -102,9 +118,11 @@ export default class ComponentLogin extends Component {
                   <button type="submit" class="my-5 btn-lg btn-primary" style={{ height: "100%", width: "100%" }}>
                     <div>LOGIN</div>
                   </button>
+
+
+
                 </form>
               </div>
-
             </div>
 
           </div>
