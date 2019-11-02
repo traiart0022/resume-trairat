@@ -15,7 +15,7 @@ export default class ComponentDoc extends Component {
                     </div>
                     <Iframe src={Pdf} width="100%" height="800px" display="initial" scrolling="yes"></Iframe>
                     <div className="d-flex justify-content-center">
-                        <Link to={'/'}><button className="btn btn-success" > <b>BACK</b>  </button></Link>
+                        <Link to={'/ComponentOverview'}><button className="btn btn-success" > <b>BACK</b>  </button></Link>
                     </div>
                 </div>
                 <div class="container-fluid">

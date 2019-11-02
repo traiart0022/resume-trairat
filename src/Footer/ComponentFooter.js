@@ -1,5 +1,6 @@
 import React, { Component } from 'react'
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
+/* import { Link } from 'react-router-dom' */
 
 export default class ComponentFooter extends Component {
     render() {
@@ -21,21 +22,21 @@ export default class ComponentFooter extends Component {
 
                                     </div>
                                     <div className="d-flex justify-content-center">
-                                        <h5>PHONE: <b>086-549-2804</b></h5>
+                                        <h5>PHONE: <b style={{ color: "#e65c00", fontSize: "", }}>086-549-2804</b></h5>
                                     </div>
                                 </div>
 
                                 <div class="col-xs-12 col-sm-12 col-md-6 col-lg-3 my-2 align-self-center">
 
                                     <div className="d-flex justify-content-center ">
-                                         <FontAwesomeIcon className="" icon="users" style={{ height: "60px", width: "60px", color: "blue" }} />    
-                                        
-                                        
-                                                                      
+                                        <FontAwesomeIcon className="" icon="users" style={{ height: "60px", width: "60px", color: "blue" }} />
+
+
+
                                     </div>
                                     <div className="d-flex justify-content-center">
-                                        <h5>FB: <b><a href='https://www.facebook.com/kok.chikago.5' target="blank">facebook</a></b></h5>
-                                        
+                                        <h5 className="faa-bounce animated">FB: <a href='https://www.facebook.com/kok.chikago.5' target="blank"><b  style={{ color: "#e65c00", fontSize: "", }}>facebook</b></a></h5>
+
                                     </div>
 
                                 </div>
@@ -47,7 +48,7 @@ export default class ComponentFooter extends Component {
                                         <FontAwesomeIcon className="" icon="comments" style={{ height: "60px", width: "60px", color: "blue" }} />
                                     </div>
                                     <div className="d-flex justify-content-center">
-                                        <h5>LINE ID: <b>0897927930</b></h5>
+                                        <h5>LINE ID: <b style={{ color: "#e65c00", fontSize: "", }}>0897927930</b></h5>
                                     </div>
                                 </div>
 
@@ -58,7 +59,7 @@ export default class ComponentFooter extends Component {
                                         <FontAwesomeIcon className="" icon="envelope" style={{ height: "60px", width: "60px", color: "blue" }} />
                                     </div>
                                     <div className="d-flex justify-content-center">
-                                        <h5>MAIL: <b>Trairat0022@gmail.com</b></h5>
+                                        <h5>MAIL: <b style={{ color: "#e65c00", fontSize: "", }}>Trairat0022@gmail.com</b></h5>
                                     </div>
                                 </div>
 
