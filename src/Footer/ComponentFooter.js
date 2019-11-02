@@ -35,7 +35,7 @@ export default class ComponentFooter extends Component {
 
                                     </div>
                                     <div className="d-flex justify-content-center">
-                                        <h5 className="faa-bounce animated">FB: <a href='https://www.facebook.com/kok.chikago.5' target="blank"><b  style={{ color: "#e65c00", fontSize: "", }}>facebook</b></a></h5>
+                                        <h5 className="faa-bounce animated">FB: <a href='https://www.facebook.com/Trairat.Sukpong' target="blank"><b  style={{ color: "#e65c00", fontSize: "", }}>Trairat.Sukpong</b></a></h5>
 
                                     </div>
 
