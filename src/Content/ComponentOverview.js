@@ -120,7 +120,7 @@ export default class ComponentIntroduceMyself extends Component {
             animetion3: "",
             animetion4: "",
             animetion5: "",
-            animetionSkill:"faa-wrench animated",
+            animetionSkill: "faa-wrench animated",
         }
     }
 
@@ -184,63 +184,58 @@ export default class ComponentIntroduceMyself extends Component {
                                     <ul>
 
                                         <li>
-                                            <div className="d-flex justify-content-start">
-                                                <div className="" style={{ color: "", fontSize: "18px", }}>
-                                                    Name:
-                                                </div>
-                                                &nbsp;
-                                                <div className="" style={{ color: "#e65c00", fontSize: "18px", }}>
-                                                    Mr.Trirat Sukphong
-                                                </div>
-                                            </div>
+
+                                            <h6 className="" style={{ color: "", fontSize: "18px", }}>
+                                                Name:
+                                                </h6>
+                                            <h6 className="" style={{ color: "#e65c00", fontSize: "18px", }}>
+                                                Mr.Trirat Sukphong
+                                                </h6>
                                         </li>
 
                                         <li>
-                                            <div className="d-flex justify-content-start">
-                                                <div className="" style={{ color: "", fontSize: "18px", }}>
-                                                    Nickname:
-                                            </div >
-                                                &nbsp;
-                                                <div className="" style={{ color: "#e65c00", fontSize: "18px", }}>
-                                                    Duck
-                                                </div>
-                                            </div>
+
+                                            <h6 className="" style={{ color: "", fontSize: "18px", }}>
+                                                Nickname:
+                                            </h6 >
+
+                                            <h6 className="" style={{ color: "#e65c00", fontSize: "18px", }}>
+                                                Duck
+                                                </h6>
+
                                         </li>
 
                                         <li>
-                                            <div className="d-flex justify-content-start">
-                                                <div className="" style={{ color: "", fontSize: "18px", }}>
-                                                    Date of Birth:
-                                            </div>
-                                                &nbsp;
-                                                <div className="" style={{ color: "#e65c00", fontSize: "18px", }}>
-                                                    19 March 1997
-                                                </div>
-                                            </div>
+
+                                            <h6 className="" style={{ color: "", fontSize: "18px", }}>
+                                                Date of Birth:
+                                            </h6>
+
+                                            <h6 className="" style={{ color: "#e65c00", fontSize: "18px", }}>
+                                                19 March 1997
+                                                </h6>
+
                                         </li>
 
                                         <li>
-                                            <div className="d-flex justify-content-start">
-                                                <div className="" style={{ color: "", fontSize: "18px", }}>
-                                                    Marital status:
-                                                </div>
-                                                &nbsp;
-                                                <div className="" style={{ color: "#e65c00", fontSize: "18px", }}>
-                                                    Single
-                                                </div>
-                                            </div>
+
+                                            <h6 className="" style={{ color: "", fontSize: "18px", }}>
+                                                Marital status:
+                                                </h6>
+
+                                            <h6 className="" style={{ color: "#e65c00", fontSize: "18px", }}>
+                                                Single
+                                                </h6>
                                         </li>
 
                                         <li>
-                                            <div className="d-flex justify-content-start">
-                                                <div className="" style={{ color: "", fontSize: "18px", }}>
-                                                    Address:
-                                                </div>
-                                                &nbsp;
-                                                <div className="" style={{ color: "#e65c00", fontSize: "18px", }}>
-                                                    8 Soi-Wutthakat 42, Wutthakat Road- Bang Kho Subdistrict - Chom Thong DistrictBangkok 10150
-                                                </div>
-                                            </div>
+
+                                            <h6 className="" style={{ color: "", fontSize: "18px", }}>
+                                                Address:
+                                            </h6>
+                                            <h6 style={{ color: "#e65c00", fontSize: "18px", }}>
+                                                8 Soi-Wutthakat 42, Wutthakat Road- Bang Kho Subdistrict - Chom Thong DistrictBangkok 10150
+                                            </h6>
                                         </li>
                                     </ul>
 
@@ -251,73 +246,73 @@ export default class ComponentIntroduceMyself extends Component {
                                 <div class="container-fluid rounded p-5 my-2" style={{ backgroundColor: "#8cd98c", borderStyle: "solid ", borderColor: "Black", borderWidth: "3px" }}>
                                     <ul>
                                         <li>
-                                            <div className="d-flex justify-content-start">
-                                                <div className="" style={{ color: "", fontSize: "18px", }}>
-                                                    Nationality:
-                                            </div>
-                                                &nbsp;
-                                                <div className="" style={{ color: "#e65c00", fontSize: "18px", }}>
-                                                    Thai
-                                                </div>
-                                            </div>
+
+                                            <h6 className="" style={{ color: "", fontSize: "18px", }}>
+                                                Nationality:
+                                            </h6>
+
+                                            <h6 className="" style={{ color: "#e65c00", fontSize: "18px", }}>
+                                                Thai
+                                            </h6>
+
                                         </li>
                                         <li>
 
-                                            <div className="d-flex justify-content-start">
-                                                <div className="" style={{ color: "", fontSize: "18px", }}>
-                                                    weight:
-                                            </div>
-                                                &nbsp;
-                                                <div className="" style={{ color: "#e65c00", fontSize: "18px", }}>
-                                                    47 kg
-                                                </div>
-                                            </div>
-                                        </li>
 
-                                        <li>
-                                            <div className="d-flex justify-content-start">
-                                                <div className="" style={{ color: "", fontSize: "18px", }}>
-                                                    height:
-                                                </div>
-                                                &nbsp;
-                                                <div className="" style={{ color: "#e65c00", fontSize: "18px", }}>
-                                                    166 cm
-                                                </div>
-                                            </div>
+                                            <h6 className="" style={{ color: "", fontSize: "18px", }}>
+                                                weight:
+                                            </h6>
 
+                                            <h6 className="" style={{ color: "#e65c00", fontSize: "18px", }}>
+                                                47 kg
+                                            </h6>
 
                                         </li>
 
                                         <li>
 
-                                            <div className="d-flex justify-content-start">
-                                                <div className="" style={{ color: "#e65c00", fontSize: "18px", }}>
-                                                    No military obligations
-                                                </div>
-                                            </div>
+                                            <h6 className="" style={{ color: "", fontSize: "18px", }}>
+                                                height:
+                                            </h6>
+
+                                            <h6 className="" style={{ color: "#e65c00", fontSize: "18px", }}>
+                                                166 cm
+                                             </h6>
+
+
+
+                                        </li>
+
+                                        <li>
+
+
+                                            <h6 className="" style={{ color: "#e65c00", fontSize: "18px", }}>
+                                                No military obligations
+                                             </h6>
+
 
 
                                         </li>
                                         <li>Hobby: </li>
-                                        <div className="d-flex justify-content-start">
-                                            <div className="" style={{ color: "#e65c00", fontSize: "18px", }}>
-                                                Play Mobile Games(ROV) <FontAwesomeIcon icon="star" className={animetion1} style={{ color: "#e65c00" }} />
-                                                <FontAwesomeIcon className={animetion2} icon="star" style={{ color: "#e65c00" }} />
-                                                <FontAwesomeIcon className={animetion3} icon="star" style={{ color: "#e65c00" }} />
-                                                <FontAwesomeIcon className={animetion4} icon="star" style={{ color: "#e65c00" }} />
-                                                <FontAwesomeIcon className={animetion5} icon="star" style={{ color: "#e65c00" }} />
-                                            </div>
-                                        </div>
 
-                                        <div className="d-flex justify-content-start">
-                                            <div className="" style={{ color: "#e65c00", fontSize: "18px", }}>
-                                                Play Football<FontAwesomeIcon icon="star" className={animetion1} style={{ color: "#e65c00" }} />
-                                                <FontAwesomeIcon className={animetion2} icon="star" style={{ color: "#e65c00" }} />
-                                                <FontAwesomeIcon className={animetion3} icon="star" style={{ color: "#e65c00" }} />
-                                                <FontAwesomeIcon className={animetion4} icon="star" style={{ color: "#e65c00" }} />
-                                                <FontAwesomeIcon className={animetion5} icon="star" style={{ color: "#e65c00" }} />
-                                            </div>
-                                        </div>
+                                        <h6 className="" style={{ color: "#e65c00", fontSize: "18px", }}>
+                                            Play Mobile Games(ROV) <FontAwesomeIcon icon="star" className={animetion1} style={{ color: "#e65c00" }} />
+                                            <FontAwesomeIcon className={animetion2} icon="star" style={{ color: "#e65c00" }} />
+                                            <FontAwesomeIcon className={animetion3} icon="star" style={{ color: "#e65c00" }} />
+                                            <FontAwesomeIcon className={animetion4} icon="star" style={{ color: "#e65c00" }} />
+                                            <FontAwesomeIcon className={animetion5} icon="star" style={{ color: "#e65c00" }} />
+                                        </h6>
+
+
+
+                                        <h6 className="" style={{ color: "#e65c00", fontSize: "18px", }}>
+                                            Play Football<FontAwesomeIcon icon="star" className={animetion1} style={{ color: "#e65c00" }} />
+                                            <FontAwesomeIcon className={animetion2} icon="star" style={{ color: "#e65c00" }} />
+                                            <FontAwesomeIcon className={animetion3} icon="star" style={{ color: "#e65c00" }} />
+                                            <FontAwesomeIcon className={animetion4} icon="star" style={{ color: "#e65c00" }} />
+                                            <FontAwesomeIcon className={animetion5} icon="star" style={{ color: "#e65c00" }} />
+                                        </h6>
+
 
 
                                     </ul>
