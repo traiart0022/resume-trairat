@@ -19,11 +19,11 @@ export default class ComponentDoc extends Component {
                     </div>
                 </div>
                 <div class="container-fluid">
+
                     <div class="row">
                         <div className="col-xs-12 col-sm-12 col-md-12 col-lg-12 "  >
-                            <div className=" p-1 mt-3  rounded" style={{ backgroundColor: "#0066ff", color: "blue", fontSize: "16px", padding: "" }} >
+                            
                                 <Footer />
-                            </div>
                         </div>
                     </div>
                 </div>

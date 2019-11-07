@@ -17,12 +17,10 @@ export default class ComponentLogin extends Component {
   }
 
 
-
-  componentWillMount() {
-    this.setState({ Cookies: cookies.get('cookies') })
-  }
-
   componentDidMount() {
+
+    this.setState({ Cookies: cookies.get('cookies') })
+
     if (this.state.Cookies !== "") {
       cookies.remove("cookies", { path: '/' });
     }
@@ -46,7 +44,7 @@ export default class ComponentLogin extends Component {
           redirect: true
         })
         /* window.location.replace("/ComponentOverview") */
-        
+
       } else {
 
         alert("Username or Password is Incorrect")
@@ -68,12 +66,14 @@ export default class ComponentLogin extends Component {
 
     const { redirect } = this.state;
 
-     if (redirect === true) {
-       return <Redirect to='/ComponentOverview'/>;
-     }
+    if (redirect === true) {
+      return <Redirect to='/ComponentOverview' />;
+    }
 
     return (
-      <div>
+      
+      <div >
+
         <div class="container-fluid mt-5">
           <div class="row d-flex justify-content-center">
             <div class="col-xs-12 col-sm-12 col-md-6 col-lg-4 " >

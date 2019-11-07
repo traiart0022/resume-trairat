@@ -9,20 +9,22 @@ export default class ComponentHeader extends Component {
         super(props)
 
         this.state = {
-            UserLog: cookies.get('cookies')
+            UserLog: ""
         }
     }
 
 
     componentDidMount() {
 
-        setInterval(() => {
+        this.LogingUser();
+
+   /*     setInterval(() => {
             
-            if (this.state.UserLog === undefined) {
+             if (this.state.UserLog === undefined) {
                 this.LogingUser();
                 cookies.remove("cookies", { path: '/' });
             }
-        }, 3000);
+        }, 3000); */
 
     }
 
@@ -68,22 +70,31 @@ export default class ComponentHeader extends Component {
 
                         <div className="collapse navbar-collapse" id="collapsibleNavbar">
                             <ul className="navbar-nav ml-auto ">
-                                 <li className="nav-item">
-                                    <Link onClick={this.handleClick} style={{ color: "black" }} className="nav-link" >< FontAwesomeIcon icon="door-open" /> LOGOUT </Link>
+
+{/*                                  <li className="nav-item">
+                                    <Link to='/INTRODUSEMYSELF' style={{ color: "black" }} className="nav-link" >< FontAwesomeIcon icon="door-open" /> INTRODUSE MYSELF </Link>
                                 </li>
 
-                                {/* <li className="nav-item">
-                                    <a className="nav-link" href="#">SKILL</a>
-                                </li>
                                 <li className="nav-item">
-                                    <a className="nav-link" href="#">EXPERIENCE</a>
+                                    <Link to='/EDUCATION' style={{ color: "black" }} className="nav-link" >< FontAwesomeIcon icon="door-open" /> EDUCATION </Link>
                                 </li>
+
                                 <li className="nav-item">
-                                    <a className="nav-link" href="#">EDUCATION</a>
+                                    <Link to='/SKILL' style={{ color: "black" }} className="nav-link" >< FontAwesomeIcon icon="door-open" /> SKILL </Link>
                                 </li>
+
                                 <li className="nav-item">
-                                    <a className="nav-link" href="#">PORTFOLIO</a>
+                                    <Link to='/EXPERIENCE' style={{ color: "black" }} className="nav-link" >< FontAwesomeIcon icon="door-open" /> EXPERIENCE </Link>
+                                </li>
+
+                                <li className="nav-item">
+                                    <Link to='/PORTFOLIO' style={{ color: "black" }} className="nav-link" >< FontAwesomeIcon icon="door-open" /> PORTFOLIO </Link>
                                 </li> */}
+
+                                <li className="nav-item">
+                                    <Link onClick={this.handleClick} style={{ color: "black" }} className="nav-link" >< FontAwesomeIcon icon="door-open" /> LOGOUT </Link>
+                                </li>
+                                
                             </ul>
                         </div>
                     </nav>
