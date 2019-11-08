@@ -6,17 +6,17 @@ export default class ComponentFooter extends Component {
     render() {
         return (
             <div className=" p-1 mt-3  rounded" style={{ backgroundColor: "#0066ff", color: "", fontSize: "16px", padding: "" }}>
-                <div class="container-fluid">
-                    <div class="container-fluid rounded my-2 p-3" style={{ backgroundColor: "#80b3ff", borderStyle: "solid ", borderColor: "Black", borderWidth: "3px" }}>
-                        <div class="row">
+                <div className="container-fluid">
+                    <div className="container-fluid rounded my-2 p-3" style={{ backgroundColor: "#80b3ff", borderStyle: "solid ", borderColor: "Black", borderWidth: "3px" }}>
+                        <div className="row">
 
-                            <div class="container-fluid">
+                            <div className="container-fluid">
                                 <div className="">
                                     <h4><b>CONTACT</b></h4>
                                 </div>
-                                <div class="row">
+                                <div className="row">
 
-                                    <div class="col-xs-12 col-sm-12 col-md-6 col-lg-3 my-2 ">
+                                    <div className="col-xs-12 col-sm-12 col-md-6 col-lg-3 my-2 ">
 
                                         <div className="d-flex justify-content-center">
                                             <FontAwesomeIcon className="" icon="mobile" style={{ height: "60px", width: "60px", color: "blue" }} />
@@ -27,7 +27,7 @@ export default class ComponentFooter extends Component {
                                         </div>
                                     </div>
 
-                                    <div class="col-xs-12 col-sm-12 col-md-6 col-lg-3 my-2 align-self-center">
+                                    <div className="col-xs-12 col-sm-12 col-md-6 col-lg-3 my-2 align-self-center">
 
                                         <div className="d-flex justify-content-center ">
                                             <FontAwesomeIcon className="" icon="users" style={{ height: "60px", width: "60px", color: "blue" }} />
@@ -42,7 +42,7 @@ export default class ComponentFooter extends Component {
 
                                     </div>
 
-                                    <div class="col-xs-12 col-sm-12 col-md-6 col-lg-3 my-2">
+                                    <div className="col-xs-12 col-sm-12 col-md-6 col-lg-3 my-2">
 
                                         <div className="d-flex justify-content-center">
 
@@ -53,7 +53,7 @@ export default class ComponentFooter extends Component {
                                         </div>
                                     </div>
 
-                                    <div class="col-xs-12 col-sm-12 col-md-6 col-lg-3 my-2">
+                                    <div className="col-xs-12 col-sm-12 col-md-6 col-lg-3 my-2">
 
                                         <div className="d-flex justify-content-center">
 

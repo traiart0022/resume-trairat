@@ -72,16 +72,16 @@ export default class ComponentINTRODUSE_MYSELF extends Component {
 
                             <div className="col-xs-12 col-sm-6 col-md-6 col-lg-4 p-2" style={Overview_div}>
 
-                                <div class="container-fluid rounded p-5 my-2" style={{ backgroundColor: "#8cd98c", borderStyle: "solid ", borderColor: "Black", borderWidth: "3px" }}>
+                                <div className="container-fluid rounded p-5 my-2" style={{ backgroundColor: "#8cd98c", borderStyle: "solid ", borderColor: "Black", borderWidth: "3px" }}>
                                     <h3><b>INTRODUSE MYSELF</b></h3>
                                     <div>
-                                        <img src={img1} class="rounded" alt='' style={Overview_responsive} />
+                                        <img src={img1} className="rounded" alt='' style={Overview_responsive} />
                                     </div>
                                 </div>
                             </div>
 
                             <div className="col-xs-12 col-sm-6 col-md-6 col-lg-4 align-self-center">
-                                <div class="container-fluid rounded p-5 my-2" style={{ backgroundColor: "#8cd98c", borderStyle: "solid ", borderColor: "Black", borderWidth: "3px" }}>
+                                <div className="container-fluid rounded p-5 my-2" style={{ backgroundColor: "#8cd98c", borderStyle: "solid ", borderColor: "Black", borderWidth: "3px" }}>
                                     <ul>
 
                                         <li>
@@ -144,7 +144,7 @@ export default class ComponentINTRODUSE_MYSELF extends Component {
                             </div>
 
                             <div className="col-xs-12 col-sm-6 col-md-6 col-lg-4 align-self-center">
-                                <div class="container-fluid rounded p-5 my-2" style={{ backgroundColor: "#8cd98c", borderStyle: "solid ", borderColor: "Black", borderWidth: "3px" }}>
+                                <div className="container-fluid rounded p-5 my-2" style={{ backgroundColor: "#8cd98c", borderStyle: "solid ", borderColor: "Black", borderWidth: "3px" }}>
                                     <ul>
                                         <li>
 

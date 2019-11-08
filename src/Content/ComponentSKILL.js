@@ -25,14 +25,14 @@ export default class ComponentSKILL extends Component {
                     <div className="row">
                         <div className="col-xs-12 col-sm-12 col-md-6 col-lg-4">
 
-                            <div class="container-fluid rounded my-2" style={{ backgroundColor: "#d4d4aa", borderStyle: "solid ", borderColor: "Black", borderWidth: "3px" }}>
+                            <div className="container-fluid rounded my-2" style={{ backgroundColor: "#d4d4aa", borderStyle: "solid ", borderColor: "Black", borderWidth: "3px" }}>
 
                                 <h4>Web Application</h4>
 
-                                <div class="container-fluid">
-                                    <div class="row">
+                                <div className="container-fluid">
+                                    <div className="row">
 
-                                        <div class="col-xs-6 col-sm-6 col-md-6 col-lg-6">
+                                        <div className="col-xs-6 col-sm-6 col-md-6 col-lg-6">
 
                                             <li>Front-End</li>
                                             <ul>
@@ -91,7 +91,7 @@ export default class ComponentSKILL extends Component {
                                             </ul>
                                         </div>
 
-                                        <div class="col-xs-6 col-sm-6 col-md-6 col-lg-6">
+                                        <div className="col-xs-6 col-sm-6 col-md-6 col-lg-6">
 
                                             <li>Back-End</li>
                                             <ul>
@@ -163,11 +163,11 @@ export default class ComponentSKILL extends Component {
                         </div>
 
                         <div className="col-xs-12 col-sm-12 col-md-6 col-lg-4 ">
-                            <div class="container-fluid rounded my-2" style={{ backgroundColor: "#d4d4aa", borderStyle: "solid ", borderColor: "Black", borderWidth: "3px" }}>
+                            <div className="container-fluid rounded my-2" style={{ backgroundColor: "#d4d4aa", borderStyle: "solid ", borderColor: "Black", borderWidth: "3px" }}>
                                 <h4>Desktop Application</h4>
-                                <div class="container-fluid">
-                                    <div class="row d-flex justify-content-center">
-                                        <div class="col-xs-12 col-sm-12 col-md-12 col-lg-10">
+                                <div className="container-fluid">
+                                    <div className="row d-flex justify-content-center">
+                                        <div className="col-xs-12 col-sm-12 col-md-12 col-lg-10">
 
 
                                             <div className="d-flex justify-content-between">
@@ -235,11 +235,11 @@ export default class ComponentSKILL extends Component {
                         </div>
 
                         <div className="col-xs-12 col-sm-12 col-md-6 col-lg-4 ">
-                            <div class="container-fluid rounded my-2" style={{ backgroundColor: "#d4d4aa", borderStyle: "solid ", borderColor: "Black", borderWidth: "3px" }}>
+                            <div className="container-fluid rounded my-2" style={{ backgroundColor: "#d4d4aa", borderStyle: "solid ", borderColor: "Black", borderWidth: "3px" }}>
                                 <h4>Language English Skills</h4>
-                                <div class="container-fluid">
-                                    <div class="row">
-                                        <div class="col-xs-12 col-sm-12 col-md-12 col-lg-8">
+                                <div className="container-fluid">
+                                    <div className="row">
+                                        <div className="col-xs-12 col-sm-12 col-md-12 col-lg-8">
 
 
                                             <div className="d-flex justify-content-between">
@@ -308,12 +308,12 @@ export default class ComponentSKILL extends Component {
                         </div>
 
                         <div className="col-xs-12 col-sm-12 col-md-6 col-lg-4 ">
-                            <div class="container-fluid rounded my-2" style={{ backgroundColor: "#d4d4aa", borderStyle: "solid ", borderColor: "Black", borderWidth: "3px" }}>
+                            <div className="container-fluid rounded my-2" style={{ backgroundColor: "#d4d4aa", borderStyle: "solid ", borderColor: "Black", borderWidth: "3px" }}>
                                 <h4>Professional Skills</h4>
-                                <div class="container-fluid">
-                                    <div class="row">
+                                <div className="container-fluid">
+                                    <div className="row">
 
-                                        <div class="col-xs-12 col-sm-12 col-md-12 col-lg-12">
+                                        <div className="col-xs-12 col-sm-12 col-md-12 col-lg-12">
 
                                             <h6 style={{ color: "#e65c00", fontSize: "", }}>Have integrity</h6>
                                             <h6 style={{ color: "#e65c00", fontSize: "", }}>Have a good relationship</h6>
@@ -327,11 +327,11 @@ export default class ComponentSKILL extends Component {
                         </div>
 
                         <div className="col-xs-12 col-sm-12 col-md-6 col-lg-4 ">
-                            <div class="container-fluid rounded my-2" style={{ backgroundColor: "#d4d4aa", borderStyle: "solid ", borderColor: "Black", borderWidth: "3px" }}>
+                            <div className="container-fluid rounded my-2" style={{ backgroundColor: "#d4d4aa", borderStyle: "solid ", borderColor: "Black", borderWidth: "3px" }}>
                                 <h4>OTHER</h4>
-                                <div class="container-fluid">
-                                    <div class="row">
-                                        <div class="col-xs-12 col-sm-12 col-md-12 col-lg-12">
+                                <div className="container-fluid">
+                                    <div className="row">
+                                        <div className="col-xs-12 col-sm-12 col-md-12 col-lg-12">
                                             <h6 style={{ color: "#e65c00", fontSize: "", }}>Travis ci</h6>
                                             <h6 style={{ color: "#e65c00", fontSize: "", }}>Config Router,Switch(Cisco)</h6>
                                             <h6 style={{ color: "#e65c00", fontSize: "", }}>Oracle VM VirtualBox</h6>
@@ -345,37 +345,37 @@ export default class ComponentSKILL extends Component {
                         </div>
 
                         <div className="col-xs-12 col-sm-12 col-md-6 col-lg-4 ">
-                            <div class="container-fluid rounded my-2 p-3" style={{ backgroundColor: "#d4d4aa", borderStyle: "solid ", borderColor: "Black", borderWidth: "3px" }}>
-                                <div class="container-fluid">
-                                    <div class="row">
+                            <div className="container-fluid rounded my-2 p-3" style={{ backgroundColor: "#d4d4aa", borderStyle: "solid ", borderColor: "Black", borderWidth: "3px" }}>
+                                <div className="container-fluid">
+                                    <div className="row">
 
-                                        <div class="col-xs-12 col-sm-6 col-md-6 col-lg-4 ">
+                                        <div className="col-xs-12 col-sm-6 col-md-6 col-lg-4 ">
                                             <div className="d-flex justify-content-center">
                                                 <img src={iconReact} className="rounded " alt='' style={Overview_responsive_icon} />
                                             </div>
                                         </div>
-                                        <div class="col-xs-12 col-sm-6 col-md-6 col-lg-4">
+                                        <div className="col-xs-12 col-sm-6 col-md-6 col-lg-4">
                                             <div className="d-flex justify-content-center">
                                                 <img src={iconNodejs} className="rounded" alt='' style={Overview_responsive_icon} />
                                             </div>
                                         </div>
-                                        <div class="col-xs-12 col-sm-6 col-md-6 col-lg-4">
+                                        <div className="col-xs-12 col-sm-6 col-md-6 col-lg-4">
                                             <div className="d-flex justify-content-center">
                                                 <img src={iconCss} className="rounded" alt='' style={Overview_responsive_icon} />
                                             </div>
                                         </div>
-                                        <div class="col-xs-12 col-sm-6 col-md-6 col-lg-4">
+                                        <div className="col-xs-12 col-sm-6 col-md-6 col-lg-4">
                                             <div className="d-flex justify-content-center">
                                                 <img src={iconHtml} className="rounded" alt='' style={Overview_responsive_icon} />
                                             </div>
                                         </div>
 
-                                        <div class="col-xs-12 col-sm-6 col-md-6 col-lg-4">
+                                        <div className="col-xs-12 col-sm-6 col-md-6 col-lg-4">
                                             <div className="d-flex justify-content-center">
                                                 <img src={iconBootstrap} className="rounded" alt='' style={Overview_responsive_icon} />
                                             </div>
                                         </div>
-                                        <div class="col-xs-12 col-sm-6 col-md-6 col-lg-4">
+                                        <div className="col-xs-12 col-sm-6 col-md-6 col-lg-4">
                                             <div className="d-flex justify-content-center">
                                                 <img src={IconMysql} className="rounded" alt='' style={Overview_responsive_icon} />
                                             </div>

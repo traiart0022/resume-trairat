@@ -20,11 +20,11 @@ export default class ComponentEDUCATION extends Component {
                 <div className="container-fluid">
                     <h3><b>EDUCATION</b></h3>
 
-                    <div class="row">
-                        <div class="col-xs-12 col-sm-12 col-md-12 col-lg-12 ">
+                    <div className="row">
+                        <div className="col-xs-12 col-sm-12 col-md-12 col-lg-12 ">
 
-                            <div class="container-fluid p-5 my-2 rounded" style={{ backgroundColor: "#ffbf80", borderStyle: "solid ", borderColor: "Black", borderWidth: "3px" }}>
-                                <div class="container-fluid d-flex justify-content-center">
+                            <div className="container-fluid p-5 my-2 rounded" style={{ backgroundColor: "#ffbf80", borderStyle: "solid ", borderColor: "Black", borderWidth: "3px" }}>
+                                <div className="container-fluid d-flex justify-content-center">
 
                                     <div className="">
                                         <center>
@@ -35,10 +35,10 @@ export default class ComponentEDUCATION extends Component {
 
 
                                 </div>
-                                <div class="container-fluid ">
+                                <div className="container-fluid ">
 
-                                    <div class="row">
-                                        <div class="col-xs-12 col-sm-12 col-md-4 col-lg-4 d-flex justify-content-center rounded my-1" style={Overview_Container} >
+                                    <div className="row">
+                                        <div className="col-xs-12 col-sm-12 col-md-4 col-lg-4 d-flex justify-content-center rounded my-1" style={Overview_Container} >
 
                                             <div style={{}}>
                                                 <img src={IconKmutnb} className="rounded" alt='' style={{ height: "180px", width: "auto" }} />
@@ -46,7 +46,7 @@ export default class ComponentEDUCATION extends Component {
 
                                         </div>
 
-                                        <div class="col-xs-12 col-sm-12 col-md-4 col-lg-4 d-flex justify-content-center rounded my-1" style={Overview_Container}>
+                                        <div className="col-xs-12 col-sm-12 col-md-4 col-lg-4 d-flex justify-content-center rounded my-1" style={Overview_Container}>
 
                                             <div className="rounded align-self-center" style={{}}>
                                                 <img src={Kmutnb} className="rounded align-self-center" alt='' style={{ height: "140px", width: "auto" }} />
@@ -54,7 +54,7 @@ export default class ComponentEDUCATION extends Component {
 
                                         </div>
 
-                                        <div class="col-xs-12 col-sm-12 col-md-4 col-lg-4 d-flex justify-content-center rounded my-1" style={Overview_Container}>
+                                        <div className="col-xs-12 col-sm-12 col-md-4 col-lg-4 d-flex justify-content-center rounded my-1" style={Overview_Container}>
 
                                             <div style={{}}>
                                                 <img src={IconCit} className="rounded" alt='' style={{ height: "180px", width: "auto" }} />
@@ -67,11 +67,11 @@ export default class ComponentEDUCATION extends Component {
                         </div>
                     </div>
 
-                    <div class="row">
-                        <div class="col-xs-12 col-sm-12 col-md-12 col-lg-12 ">
+                    <div className="row">
+                        <div className="col-xs-12 col-sm-12 col-md-12 col-lg-12 ">
 
-                            <div class="container-fluid p-5 my-2 rounded" style={{ backgroundColor: "#ffbf80", borderStyle: "solid ", borderColor: "Black", borderWidth: "3px" }}>
-                                <div class="container-fluid d-flex justify-content-center">
+                            <div className="container-fluid p-5 my-2 rounded" style={{ backgroundColor: "#ffbf80", borderStyle: "solid ", borderColor: "Black", borderWidth: "3px" }}>
+                                <div className="container-fluid d-flex justify-content-center">
 
                                     <div className="">
                                         <center>
@@ -81,16 +81,16 @@ export default class ComponentEDUCATION extends Component {
                                     </div>
                                 </div>
 
-                                <div class="container-fluid ">
+                                <div className="container-fluid ">
 
-                                    <div class="row">
-                                        <div class="col-xs-12 col-sm-12 col-md-6 col-lg-6 d-flex justify-content-center my-1" style={Overview_Container}>
+                                    <div className="row">
+                                        <div className="col-xs-12 col-sm-12 col-md-6 col-lg-6 d-flex justify-content-center my-1" style={Overview_Container}>
                                             <div>
                                                 <img src={IconRjs} className="rounded" alt='' style={{ height: "180px", width: "auto" }} />
                                             </div>
                                         </div>
 
-                                        <div class="col-xs-12 col-sm-12 col-md-6 col-lg-6 d-flex justify-content-center my-1" style={Overview_Container}>
+                                        <div className="col-xs-12 col-sm-12 col-md-6 col-lg-6 d-flex justify-content-center my-1" style={Overview_Container}>
                                             <div className="rounded align-self-center">
                                                 <img src={rjs} className="rounded" alt='' style={{ height: "140px", width: "auto" }} />
                                             </div>

@@ -2,6 +2,7 @@ import React, { Component } from 'react'
 import Header from "../ComponentHeader"
 import Footer from "../Footer/ComponentFooter"
 import "../font-awesome-animation.min.css"
+
 import INTRODUSEMYSELF from "./ComponentINTRODUSE_MYSELF"
 import EDUCATION from "./ComponentEDUCATION"
 import SKILL from "./ComponentSKILL"
@@ -78,7 +79,7 @@ export default class ComponentIntroduceMyself extends Component {
                         </div>
                     </div>
 
-                    <div class="row">
+                    <div className="row">
                         <div className="col-xs-12 col-sm-12 col-md-12 col-lg-12 "  >
                                <Footer />
                         </div>

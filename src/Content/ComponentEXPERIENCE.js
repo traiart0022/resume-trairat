@@ -35,8 +35,8 @@ export default class ComponentEXPERIENCE extends Component {
 
                     <h3><b>EXPERIENCE</b></h3>
 
-                    <div class="container-fluid rounded my-2 p-3" style={{ backgroundColor: "#b3ccff", borderStyle: "solid ", borderColor: "Black", borderWidth: "3px" }}>
-                        <div class="row">
+                    <div className="container-fluid rounded my-2 p-3" style={{ backgroundColor: "#b3ccff", borderStyle: "solid ", borderColor: "Black", borderWidth: "3px" }}>
+                        <div className="row">
                             <ul >
                                 <li>Full time job at INSPIRE TECH CO.,LTD  (JULY 2019 – Present)</li>
                                 <ul >
@@ -46,15 +46,15 @@ export default class ComponentEXPERIENCE extends Component {
                                 </ul>
 
                             </ul>
-                            <div class="container-fluid">
+                            <div className="container-fluid">
 
 
 
-                                <div class="row">
+                                <div className="row">
 
 
 
-                                    <div class="col-xs-12 col-sm-12 col-md-6 col-lg-4 my-2">
+                                    <div className="col-xs-12 col-sm-12 col-md-6 col-lg-4 my-2">
 
                                         <div className="d-flex justify-content-center">
                                             <img src={Login} className="rounded" alt='' style={Overview_responsive_img} />
@@ -62,13 +62,13 @@ export default class ComponentEXPERIENCE extends Component {
 
                                     </div>
 
-                                    <div class="col-xs-12 col-sm-12 col-md-6 col-lg-4 my-2">
+                                    <div className="col-xs-12 col-sm-12 col-md-6 col-lg-4 my-2">
                                         <div className="d-flex justify-content-center">
                                             <img src={Dashboard} className="rounded" alt='' style={Overview_responsive_img} />
                                         </div>
                                     </div>
 
-                                    <div class="col-xs-12 col-sm-12 col-md-6 col-lg-4 my-2">
+                                    <div className="col-xs-12 col-sm-12 col-md-6 col-lg-4 my-2">
 
                                         <div className="d-flex justify-content-center">
                                             <img src={Weather} className="rounded" alt='' style={Overview_responsive_img} />
@@ -76,7 +76,7 @@ export default class ComponentEXPERIENCE extends Component {
 
                                     </div>
 
-                                    <div class="col-xs-12 col-sm-12 col-md-6 col-lg-4 my-2">
+                                    <div className="col-xs-12 col-sm-12 col-md-6 col-lg-4 my-2">
 
                                         <div className="d-flex justify-content-center">
                                             <img src={Station} className="rounded" alt='' style={Overview_responsive_img} />
@@ -84,7 +84,7 @@ export default class ComponentEXPERIENCE extends Component {
 
                                     </div>
 
-                                    <div class="col-xs-12 col-sm-12 col-md-6 col-lg-4 my-2">
+                                    <div className="col-xs-12 col-sm-12 col-md-6 col-lg-4 my-2">
 
                                         <div className="d-flex justify-content-center">
                                             <img src={Inverter} className="rounded" alt='' style={Overview_responsive_img} />
@@ -92,7 +92,7 @@ export default class ComponentEXPERIENCE extends Component {
 
                                     </div>
 
-                                    <div class="col-xs-12 col-sm-12 col-md-6 col-lg-4 my-2">
+                                    <div className="col-xs-12 col-sm-12 col-md-6 col-lg-4 my-2">
 
                                         <div className="d-flex justify-content-center">
                                             <img src={Setting} className="rounded" alt='' style={Overview_responsive_img} />
@@ -100,8 +100,8 @@ export default class ComponentEXPERIENCE extends Component {
 
                                     </div>
 
-                                    <div class="col-xs-12 col-sm-12 col-md-12 col-lg-12 my-2 d-flex justify-content-center">
-                                        <button class="btn btn-warning " >
+                                    <div className="col-xs-12 col-sm-12 col-md-12 col-lg-12 my-2 d-flex justify-content-center">
+                                        <button className="btn btn-warning " >
                                             <a href="http://eve.ke.in.th/" target="blank">
                                                 <h4>
                                                     <FontAwesomeIcon className="faa-spin animated" icon="sun" style={{ height: "30px", width: "30px", color: "" }} />
@@ -120,8 +120,8 @@ export default class ComponentEXPERIENCE extends Component {
                         </div>
                     </div>
 
-                    <div class="container-fluid rounded my-2 p-3" style={{ backgroundColor: "#b3ccff", borderStyle: "solid ", borderColor: "Black", borderWidth: "3px" }}>
-                        <div class="row">
+                    <div className="container-fluid rounded my-2 p-3" style={{ backgroundColor: "#b3ccff", borderStyle: "solid ", borderColor: "Black", borderWidth: "3px" }}>
+                        <div className="row">
                             <ul >
                                 <li>Co-Operative at INSPIRE TECH CO.,LTD  (AUG 2018 – NOV 2018)</li>
                                 <ul >
@@ -132,14 +132,14 @@ export default class ComponentEXPERIENCE extends Component {
 
                                 </ul>
                             </ul>
-                            <div class="container-fluid">
+                            <div className="container-fluid">
 
 
 
-                                <div class="row">
+                                <div className="row">
 
 
-                                    <div class="col-xs-12 col-sm-12 col-md-6 col-lg-4 my-2">
+                                    <div className="col-xs-12 col-sm-12 col-md-6 col-lg-4 my-2">
 
                                         <div className="d-flex justify-content-center">
                                             <img src={SS} className="rounded" alt='' style={Overview_responsive_img} />
@@ -147,7 +147,7 @@ export default class ComponentEXPERIENCE extends Component {
 
                                     </div>
 
-                                    <div class="col-xs-12 col-sm-12 col-md-6 col-lg-4 my-2">
+                                    <div className="col-xs-12 col-sm-12 col-md-6 col-lg-4 my-2">
 
                                         <div className="d-flex justify-content-center">
                                             <img src={WHRPowerPlant} className="rounded" alt='' style={Overview_responsive_img} />
@@ -155,7 +155,7 @@ export default class ComponentEXPERIENCE extends Component {
 
                                     </div>
 
-                                    <div class="col-xs-12 col-sm-12 col-md-6 col-lg-4 my-2">
+                                    <div className="col-xs-12 col-sm-12 col-md-6 col-lg-4 my-2">
 
                                         <div className="d-flex justify-content-center">
                                             <img src={WHRPowerPlant1} className="rounded" alt='' style={Overview_responsive_img} />
@@ -163,11 +163,11 @@ export default class ComponentEXPERIENCE extends Component {
 
                                     </div>
 
-                                    <div class="container-fluid">
+                                    <div className="container-fluid">
 
-                                        <div class="row d-flex justify-content-center">
+                                        <div className="row d-flex justify-content-center">
 
-                                            <div class="col-xs-12 col-sm-12 col-md-6 col-lg-4 my-2">
+                                            <div className="col-xs-12 col-sm-12 col-md-6 col-lg-4 my-2">
 
                                                 <div className="d-flex justify-content-center">
                                                     <img src={IMG_1547} className="rounded" alt='' style={{ height: "70%", width: "70%" }} />
@@ -175,7 +175,7 @@ export default class ComponentEXPERIENCE extends Component {
 
                                             </div>
 
-                                            <div class="col-xs-12 col-sm-12 col-md-6 col-lg-4 my-2">
+                                            <div className="col-xs-12 col-sm-12 col-md-6 col-lg-4 my-2">
                                                 <div className="d-flex justify-content-center">
                                                     <img src={IMG_1631} className="rounded" alt='' style={{ height: "70%", width: "70%" }} />
                                                 </div>
@@ -188,8 +188,8 @@ export default class ComponentEXPERIENCE extends Component {
                         </div>
                     </div>
 
-                    <div class="container-fluid rounded my-2 p-3" style={{ backgroundColor: "#b3ccff", borderStyle: "solid ", borderColor: "Black", borderWidth: "3px" }}>
-                        <div class="row">
+                    <div className="container-fluid rounded my-2 p-3" style={{ backgroundColor: "#b3ccff", borderStyle: "solid ", borderColor: "Black", borderWidth: "3px" }}>
+                        <div className="row">
                             <ul >
                                 <li>Co-Operative at TOT Public Company Limited (MAY 2014 - AUG 2014)</li>
                                 <ul >
@@ -198,14 +198,14 @@ export default class ComponentEXPERIENCE extends Component {
                                 </ul>
                             </ul>
 
-                            <div class="container-fluid">
+                            <div className="container-fluid">
 
 
 
-                                <div class="row">
+                                <div className="row">
 
 
-                                    <div class="col-xs-12 col-sm-12 col-md-6 col-lg-4 my-2">
+                                    <div className="col-xs-12 col-sm-12 col-md-6 col-lg-4 my-2">
 
                                         <div className="d-flex justify-content-center">
                                             <img src={IMG_2243} className="rounded" alt='' style={{ height: "70%", width: "70%" }} />
@@ -213,7 +213,7 @@ export default class ComponentEXPERIENCE extends Component {
 
                                     </div>
 
-                                    <div class="col-xs-12 col-sm-12 col-md-6 col-lg-4 my-2">
+                                    <div className="col-xs-12 col-sm-12 col-md-6 col-lg-4 my-2">
 
                                         <div className="d-flex justify-content-center">
                                             <img src={IMG_2337} className="rounded" alt='' style={{ height: "70%", width: "70%" }} />
@@ -221,7 +221,7 @@ export default class ComponentEXPERIENCE extends Component {
 
                                     </div>
 
-                                    <div class="col-xs-12 col-sm-12 col-md-6 col-lg-4 my-2">
+                                    <div className="col-xs-12 col-sm-12 col-md-6 col-lg-4 my-2">
 
                                         <div className="d-flex justify-content-center">
                                             <img src={IMG_2352} className="rounded" alt='' style={{ height: "70%", width: "70%" }} />
@@ -236,8 +236,8 @@ export default class ComponentEXPERIENCE extends Component {
                         </div>
                     </div>
 
-                    <div class="container-fluid rounded my-2 p-3" style={{ backgroundColor: "#b3ccff", borderStyle: "solid ", borderColor: "Black", borderWidth: "3px" }}>
-                        <div class="row">
+                    <div className="container-fluid rounded my-2 p-3" style={{ backgroundColor: "#b3ccff", borderStyle: "solid ", borderColor: "Black", borderWidth: "3px" }}>
+                        <div className="row">
                             <ul >
                                 <li>Past time job at KFC Sena-fest (JAN 2015 - JUNE 2019)</li>
                                 <ul >
@@ -245,7 +245,7 @@ export default class ComponentEXPERIENCE extends Component {
                                     <li style={{ color: "#e65c00", fontSize: "", }}>Home delivery service.</li>
                                 </ul>
                             </ul>
-                            <div class="col-xs-12 col-sm-12 col-md-6 col-lg-4 my-2">
+                            <div className="col-xs-12 col-sm-12 col-md-6 col-lg-4 my-2">
 
                                 <div className="d-flex justify-content-center">
                                     <img src={IconKFC} className="rounded" alt='' style={{ height: "50%", width: "50%" }} />

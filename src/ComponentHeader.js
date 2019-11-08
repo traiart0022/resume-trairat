@@ -9,7 +9,7 @@ export default class ComponentHeader extends Component {
         super(props)
 
         this.state = {
-            UserLog: ""
+            UserLog: cookies.get('cookies')
         }
     }
 
@@ -18,13 +18,14 @@ export default class ComponentHeader extends Component {
 
         this.LogingUser();
 
-   /*     setInterval(() => {
-            
-             if (this.state.UserLog === undefined) {
-                this.LogingUser();
+        setInterval(() => {
+
+            if (this.state.UserLog === "") {
+
                 cookies.remove("cookies", { path: '/' });
+                this.LogingUser();
             }
-        }, 3000); */
+        }, 3000);
 
     }
 
@@ -38,15 +39,18 @@ export default class ComponentHeader extends Component {
 
 
     handleClick = () => {
-      
-       
-            cookies.remove("cookies", { path: '/' });
-            this.LogingUser();
+
+
+        cookies.remove("cookies", { path: '/' });
+        this.LogingUser();
     }
 
     render() {
 
         const { UserLog } = this.state
+
+        // console.log(UserLog)
+
 
         if (UserLog === undefined) {
 
@@ -71,7 +75,7 @@ export default class ComponentHeader extends Component {
                         <div className="collapse navbar-collapse" id="collapsibleNavbar">
                             <ul className="navbar-nav ml-auto ">
 
-{/*                                  <li className="nav-item">
+                                {/*                                  <li className="nav-item">
                                     <Link to='/INTRODUSEMYSELF' style={{ color: "black" }} className="nav-link" >< FontAwesomeIcon icon="door-open" /> INTRODUSE MYSELF </Link>
                                 </li>
 
@@ -94,7 +98,7 @@ export default class ComponentHeader extends Component {
                                 <li className="nav-item">
                                     <Link onClick={this.handleClick} style={{ color: "black" }} className="nav-link" >< FontAwesomeIcon icon="door-open" /> LOGOUT </Link>
                                 </li>
-                                
+
                             </ul>
                         </div>
                     </nav>

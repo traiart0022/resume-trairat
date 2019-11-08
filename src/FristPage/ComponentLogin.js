@@ -74,16 +74,16 @@ export default class ComponentLogin extends Component {
       
       <div >
 
-        <div class="container-fluid mt-5">
-          <div class="row d-flex justify-content-center">
-            <div class="col-xs-12 col-sm-12 col-md-6 col-lg-4 " >
+        <div className="container-fluid mt-5">
+          <div className="row d-flex justify-content-center">
+            <div className="col-xs-12 col-sm-12 col-md-6 col-lg-4 " >
 
-              <div class="container-fluid rounded " style={{ backgroundColor: "#66ff99" }}>
+              <div className="container-fluid rounded " style={{ backgroundColor: "#66ff99" }}>
 
                 <form onSubmit={this.handleSubmit}>
-                  <div class="form-group ">
+                  <div className="form-group ">
                     <label>User Name</label>
-                    <div class="">
+                    <div className="">
                       <input
                         onChange={(e) => {
                           this.setState({ UserName: e.target.value })
@@ -98,9 +98,9 @@ export default class ComponentLogin extends Component {
                     </div>
                   </div>
 
-                  <div class="form-group">
+                  <div className="form-group">
                     <label>Password</label>
-                    <div class="">
+                    <div className="">
                       <input
                         onChange={(e) => {
                           this.setState({ Password: e.target.value })
@@ -115,7 +115,7 @@ export default class ComponentLogin extends Component {
                     </div>
                   </div>
 
-                  <button type="submit" class="my-5 btn-lg btn-primary" style={{ height: "100%", width: "100%" }}>
+                  <button type="submit" className="my-5 btn-lg btn-primary" style={{ height: "100%", width: "100%" }}>
                     <div>LOGIN</div>
                   </button>
 
