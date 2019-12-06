@@ -66,7 +66,7 @@ export default class ComponentFooter extends Component {
 
                                         </div>
                                         <div className="d-flex justify-content-center">
-                                            <div><b style={sizeText2}>PHONE:</b><b style={sizeText1}>086-549-2804</b></div>
+                                            <div><b style={sizeText2}>PHONE: </b><b style={sizeText1}>086-549-2804</b></div>
                                         </div>
                                     </div>
 
@@ -92,7 +92,7 @@ export default class ComponentFooter extends Component {
                                             <FontAwesomeIcon className="" icon="comments" style={{ height: "60px", width: "60px", color: "blue" }} />
                                         </div>
                                         <div className="d-flex justify-content-center">
-                                            <div><b style={sizeText2}>LINE ID:</b><b style={sizeText1}>0897927930</b></div>
+                                            <div><b style={sizeText2}>LINE ID: </b><b style={sizeText1}>0897927930</b></div>
                                         </div>
                                     </div>
 

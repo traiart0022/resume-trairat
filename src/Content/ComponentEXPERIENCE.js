@@ -77,8 +77,11 @@ export default class ComponentEXPERIENCE extends Component {
                                 </ul>
                             <ul >
 
-                                <li style={{ color: "#e65c00", fontSize: "", }}>Create Web Monitoring  PV & CHARGING STATION with Reactjs Node-red Nodejs Express And Mysql.</li>
-
+                                <li style={{ color: "#e65c00", fontSize: "", }}>Create Web Monitoring  PV & CHARGING STATION.</li>
+                                <li style={{ color: "#e65c00", fontSize: "", }}>Use Reactjs and npm (Node Package Manager) to create the front-end of the website.</li>
+                                <li style={{ color: "#e65c00", fontSize: "", }}>Use Mysql as a database, design and manage databases with phpmyadmin.</li>
+                                <li style={{ color: "#e65c00", fontSize: "", }}>Use Express to create and manage back-end.</li>
+                                <li style={{ color: "#e65c00", fontSize: "", }}>Use Node-Red to connect to devices via protocol modbus tcp / ip and OCPP to read data from devices and store data. .</li>
                             </ul>
 
 
