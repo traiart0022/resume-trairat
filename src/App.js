@@ -8,28 +8,48 @@ import SKILL from "./Content/ComponentSKILL"
 import EXPERIENCE from "./Content/ComponentEXPERIENCE"
 import PORTFOLIO from "./Content/ComponentPORTFOLIO" */
 import {
-  BrowserRouter as Router,
+  BrowserRouter as 
   Switch,
   Route,
 } from 'react-router-dom'
 
 export default class App extends Component {
   render() {
-    return (
+
+    const App = () => (
       <div>
-        <Router>
-          <Switch>
-            <Route exact path='/' component={FristPage} />
-            <Route path='/ComponentOverview' component={Content} />
-            <Route path='/Doc' component={Doc} />
-            {/* <Route path='/INTRODUSEMYSELF' component={INTRODUSEMYSELF} />
-            <Route path='/EDUCATION' component={EDUCATION} />
-            <Route path='/SKILL' component={SKILL} />
-            <Route path='/EXPERIENCE' component={EXPERIENCE} />
-            <Route path='/PORTFOLIO' component={PORTFOLIO} /> */}
-          </Switch>
-        </Router>
+        <Switch>
+          <Route exact path='/' component={FristPage} />
+          <Route path='/ComponentOverview' component={Content} />
+          <Route path='/Doc' component={Doc} />
+        </Switch>
       </div>
+    )
+
+    return (
+
+
+      <div>
+        <Switch>
+          <App />
+        </Switch>
+      </div>
+
+
+      // <div>
+      //   <Router>
+      //     <Switch>
+      //       <Route exact path='/' component={FristPage} />
+      //       <Route path='/ComponentOverview' component={Content} />
+      //       <Route path='/Doc' component={Doc} />
+      //       {/* <Route path='/INTRODUSEMYSELF' component={INTRODUSEMYSELF} />
+      //       <Route path='/EDUCATION' component={EDUCATION} />
+      //       <Route path='/SKILL' component={SKILL} />
+      //       <Route path='/EXPERIENCE' component={EXPERIENCE} />
+      //       <Route path='/PORTFOLIO' component={PORTFOLIO} /> */}
+      //     </Switch>
+      //   </Router>
+      // </div>
     )
   }
 }

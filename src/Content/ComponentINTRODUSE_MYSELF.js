@@ -24,7 +24,9 @@ export default class ComponentINTRODUSE_MYSELF extends Component {
             animetion3: "",
             animetion4: "",
             animetion5: "",
-            animetionSkill: "faa-wrench animated",
+            animetionSkill: "faa-wrench animated",          
+            TextRessolution1: ""
+       
         }
     }
 
@@ -60,11 +62,33 @@ export default class ComponentINTRODUSE_MYSELF extends Component {
 
         }, 500);
 
+        this.Text()
 
+    }
+
+    Text(){
+        setInterval(() => {
+
+            if (window.screen.availWidth < 576) {
+                this.setState({
+                    TextRessolution1: "14px"
+                })
+            } else {
+                this.setState({
+                    TextRessolution1: "20px",                   
+                })
+
+            }
+
+        }, 1000);
     }
     render() {
 
-        const { animetion1, animetion2, animetion3, animetion4, animetion5,/*  animetionSkill */ } = this.state
+        const { animetion1, animetion2, animetion3, animetion4, animetion5, TextRessolution1/*  animetionSkill */ } = this.state
+
+        var sizeText2 = {
+            fontSize: TextRessolution1
+        }
 
         return (
             <div className="container-fluid mt-2">
@@ -73,8 +97,8 @@ export default class ComponentINTRODUSE_MYSELF extends Component {
                             <div className="col-xs-12 col-sm-6 col-md-6 col-lg-4 p-2" style={Overview_div}>
 
                                 <div className="container-fluid rounded p-5 my-2" style={{ backgroundColor: "#8cd98c", borderStyle: "solid ", borderColor: "Black", borderWidth: "3px" }}>
-                                    <h3><b>INTRODUSE MYSELF</b></h3>
-                                    <div>
+                                    <b style={sizeText2}>INTRODUSE MYSELF</b>
+                                    <div className="pt-2">
                                         <img src={img1} className="rounded" alt='' style={Overview_responsive} />
                                     </div>
                                 </div>
@@ -82,77 +106,77 @@ export default class ComponentINTRODUSE_MYSELF extends Component {
 
                             <div className="col-xs-12 col-sm-6 col-md-6 col-lg-4 align-self-center">
                                 <div className="container-fluid rounded p-5 my-2" style={{ backgroundColor: "#8cd98c", borderStyle: "solid ", borderColor: "Black", borderWidth: "3px" }}>
-                                    <ul>
+                                   
 
                                         <li>
 
-                                            <h6 className="" style={{ color: "", fontSize: "18px", }}>
+                                            <div className="" style={{ color: "", fontSize: "18px", }}>
                                                 Name:
-                                                </h6>
-                                            <h6 className="" style={{ color: "#e65c00", fontSize: "18px", }}>
+                                            </div>
+                                            <div className="" style={{ color: "#e65c00", fontSize: "16px", }}>
                                                 Mr.Trirat Sukphong
-                                                </h6>
+                                            </div>
                                         </li>
 
                                         <li>
 
-                                            <h6 className="" style={{ color: "", fontSize: "18px", }}>
+                                            <div className="" style={{ color: "", fontSize: "18px", }}>
                                                 Nickname:
-                                            </h6 >
+                                            </div >
 
-                                            <h6 className="" style={{ color: "#e65c00", fontSize: "18px", }}>
+                                            <div className="" style={{ color: "#e65c00", fontSize: "16px", }}>
                                                 Duck
-                                                </h6>
+                                            </div>
 
                                         </li>
 
                                         <li>
 
-                                            <h6 className="" style={{ color: "", fontSize: "18px", }}>
+                                            <div className="" style={{ color: "", fontSize: "18px", }}>
                                                 Date of Birth:
-                                            </h6>
+                                            </div>
 
-                                            <h6 className="" style={{ color: "#e65c00", fontSize: "18px", }}>
+                                            <div className="" style={{ color: "#e65c00", fontSize: "16px", }}>
                                                 19 March 1997
-                                                </h6>
+                                            </div>
 
                                         </li>
 
                                         <li>
 
-                                            <h6 className="" style={{ color: "", fontSize: "18px", }}>
+                                            <div className="" style={{ color: "", fontSize: "18px", }}>
                                                 Marital status:
-                                                </h6>
+                                            </div>
 
-                                            <h6 className="" style={{ color: "#e65c00", fontSize: "18px", }}>
+                                            <div className="" style={{ color: "#e65c00", fontSize: "16px", }}>
                                                 Single
-                                                </h6>
+                                            </div>
                                         </li>
 
                                         <li>
 
-                                            <h6 className="" style={{ color: "", fontSize: "18px", }}>
+                                            <div className="" style={{ color: "", fontSize: "18px", }}>
                                                 Address:
-                                            </h6>
-                                            <h6 style={{ color: "#e65c00", fontSize: "18px", }}>
+                                            </div>
+                                            <div style={{ color: "#e65c00", fontSize: "16px", }}>
                                                 8 Soi-Wutthakat 42, Wutthakat Road- Bang Kho Subdistrict - Chom Thong DistrictBangkok 10150
-                                            </h6>
+                                            </div>
                                         </li>
-                                    </ul>
+                                   
 
                                 </div>
                             </div>
 
                             <div className="col-xs-12 col-sm-6 col-md-6 col-lg-4 align-self-center">
                                 <div className="container-fluid rounded p-5 my-2" style={{ backgroundColor: "#8cd98c", borderStyle: "solid ", borderColor: "Black", borderWidth: "3px" }}>
-                                    <ul>
+                                    
                                         <li>
 
                                             <h6 className="" style={{ color: "", fontSize: "18px", }}>
                                                 Nationality:
                                             </h6>
 
-                                            <h6 className="" style={{ color: "#e65c00", fontSize: "18px", }}>
+                                            <h6 className="" style={{ color: "#e65c00", fontSize: "16px", }}>
                                                 Thai
                                             </h6>
 
@@ -164,7 +188,7 @@ export default class ComponentINTRODUSE_MYSELF extends Component {
                                                 weight:
                                             </h6>
 
-                                            <h6 className="" style={{ color: "#e65c00", fontSize: "18px", }}>
+                                            <h6 className="" style={{ color: "#e65c00", fontSize: "16px", }}>
                                                 47 kg
                                             </h6>
 
@@ -176,7 +200,7 @@ export default class ComponentINTRODUSE_MYSELF extends Component {
                                                 height:
                                             </h6>
 
-                                            <h6 className="" style={{ color: "#e65c00", fontSize: "18px", }}>
+                                            <h6 className="" style={{ color: "#e65c00", fontSize: "16px", }}>
                                                 166 cm
                                              </h6>
 
@@ -187,7 +211,7 @@ export default class ComponentINTRODUSE_MYSELF extends Component {
                                         <li>
 
 
-                                            <h6 className="" style={{ color: "#e65c00", fontSize: "18px", }}>
+                                            <h6 className="" style={{ color: "#e65c00", fontSize: "16px", }}>
                                                 No military obligations
                                              </h6>
 
@@ -196,27 +220,27 @@ export default class ComponentINTRODUSE_MYSELF extends Component {
                                         </li>
                                         <li>Hobby: </li>
 
-                                        <h6 className="" style={{ color: "#e65c00", fontSize: "18px", }}>
+                                        <div className="" style={{ color: "#e65c00", fontSize: "16px", }}>
                                             Play Mobile Games(ROV) <FontAwesomeIcon icon="star" className={animetion1} style={{ color: "#e65c00" }} />
                                             <FontAwesomeIcon className={animetion2} icon="star" style={{ color: "#e65c00" }} />
                                             <FontAwesomeIcon className={animetion3} icon="star" style={{ color: "#e65c00" }} />
                                             <FontAwesomeIcon className={animetion4} icon="star" style={{ color: "#e65c00" }} />
                                             <FontAwesomeIcon className={animetion5} icon="star" style={{ color: "#e65c00" }} />
-                                        </h6>
+                                        </div>
 
 
 
-                                        <h6 className="" style={{ color: "#e65c00", fontSize: "18px", }}>
+                                        <div className="" style={{ color: "#e65c00", fontSize: "16px", }}>
                                             Play Football<FontAwesomeIcon icon="star" className={animetion1} style={{ color: "#e65c00" }} />
                                             <FontAwesomeIcon className={animetion2} icon="star" style={{ color: "#e65c00" }} />
                                             <FontAwesomeIcon className={animetion3} icon="star" style={{ color: "#e65c00" }} />
                                             <FontAwesomeIcon className={animetion4} icon="star" style={{ color: "#e65c00" }} />
                                             <FontAwesomeIcon className={animetion5} icon="star" style={{ color: "#e65c00" }} />
-                                        </h6>
+                                        </div>
 
 
 
-                                    </ul>
+                                    
 
                                     <div className=" d-flex justify-content-center">
                                         <FontAwesomeIcon className="mr-auto faa-tada animated-hover faa-fast" icon="gamepad" style={{ height: "60px", width: "60px", color: "" }} />

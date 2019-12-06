@@ -64,7 +64,8 @@ export default class ComponentHeader extends Component {
                 <div className="container-fluid my-1">
                     <nav className="navbar navbar-expand-lg  bg-primary navbar-light rounded">
 
-                        <div><h4>RESUME--->MR.TRAIRAT SUKPONG</h4></div>
+                        <div><b>RESUME--></b></div>
+                        <div><b>MR.TRAIRAT SUKPONG</b></div>
 
 
                         <button className="navbar-toggler" type="button" data-toggle="collapse" data-target="#collapsibleNavbar">

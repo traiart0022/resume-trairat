@@ -66,6 +66,8 @@ export default class ComponentLogin extends Component {
 
     const { redirect } = this.state;
 
+    
+
     if (redirect === true) {
       return <Redirect to='/ComponentOverview' />;
     }

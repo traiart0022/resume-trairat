@@ -30,9 +30,9 @@ export default class ComponentPORTFOLIO extends Component {
                                                 <li>Final project at university is Semi - Automatic Raw Materials Mixer Machine</li>
                                             </ul>
                                             <div className="container-fluid">
-                                                <div className="d-flex justify-content-center my-2">
+                                                {/* <div className="d-flex justify-content-center my-2">
                                                     <Link to={Pdf} target="blank" download><button className="btn btn-success" >Download DOCUMENTS</button></Link>
-                                                </div>
+                                                </div> */}
                                                 <div className="d-flex justify-content-center">
                                                     <Link to='/Doc'><button className="btn btn-success faa-vertical animated">LINK TO DOCUMENTS </button></Link>
                                                 </div>
