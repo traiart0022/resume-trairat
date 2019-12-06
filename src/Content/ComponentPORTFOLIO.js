@@ -8,7 +8,7 @@ import IMG_2819 from "./Audio/IMG_2819.jpg"
 import Fixit2 from "./Fixit/Fixit2.JPG"
 import Fixit3 from "./Fixit/Fixit3.JPG"
 import Fixit4 from "./Fixit/Fixit4.JPG"
-import Pdf from '../DocFinalprojeect/Finalproject.pdf'
+/* import Pdf from '../DocFinalprojeect/Finalproject.pdf' */
 
 import imgVolunteer1 from "./Volunteer/img1.JPG"
 import imgVolunteer4 from "./Volunteer/img4.JPG"
