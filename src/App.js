@@ -2,6 +2,7 @@ import React, { Component } from 'react'
 import Content from "./Content/ComponentOverview"
 import FristPage from "./FristPage/ComponentLogin"
 import Doc from "./DocFinalprojeect/ComponentDoc"
+import TS from "./TScript/ComponantTS"
 /* import INTRODUSEMYSELF from "./Content/ComponentINTRODUSE_MYSELF"
 import EDUCATION from "./Content/ComponentEDUCATION"
 import SKILL from "./Content/ComponentSKILL"
@@ -22,6 +23,7 @@ export default class App extends Component {
           <Route exact path='/' component={FristPage} />
           <Route path='/ComponentOverview' component={Content} />
           <Route path='/Doc' component={Doc} />
+          <Route path='/TS' component={TS} />
         </Switch>
       </div>
     )

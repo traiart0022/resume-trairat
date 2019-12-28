@@ -62,7 +62,7 @@ export default class ComponentHeader extends Component {
             <div>
 
                 <div className="container-fluid my-1">
-                    <nav className="navbar navbar-expand-lg  bg-primary navbar-light rounded">
+                    <nav className="navbar navbar-expand-lg navbar-light rounded" style={{backgroundColor:"#50a0c3"}}>
 
                         <div><b>RESUME--></b></div>
                         <div><b>MR.TRAIRAT SUKPONG</b></div>

@@ -5,7 +5,7 @@ import IconCit from "./iconCit.gif"
 import Kmutnb from "./Kmutnb.jpg"
 import IconRjs from "./IconRjs.jpg"
 import rjs from "./rjs.jpg"
-
+import { Link } from 'react-router-dom'
 
 var Overview_Container = {
     display: 'grid',
@@ -16,20 +16,20 @@ export default class ComponentEDUCATION extends Component {
     render() {
         return (
 
-            <div className=" p-1 mt-3 rounded" style={{ backgroundColor: "#ffb84d", color: "", fontSize: "16px", padding: "" }} >
+            <div className=" p-1 mt-3 rounded" style={{ backgroundColor: "#ffd84f", color: "", fontSize: "16px", padding: "" }} >
                 <div className="container-fluid">
-                    <h3><b>EDUCATION</b></h3>
+                    <h3><b >EDUCATION</b></h3>
 
                     <div className="row">
                         <div className="col-xs-12 col-sm-12 col-md-12 col-lg-12 ">
 
-                            <div className="container-fluid p-5 my-2 rounded" style={{ backgroundColor: "#ffbf80", borderStyle: "solid ", borderColor: "Black", borderWidth: "3px" }}>
+                            <div className="container-fluid p-5 my-2 rounded" style={{ backgroundColor: "#f2f3af", borderStyle: "solid ", borderColor: "Black", borderWidth: "3px" }}>
                                 <div className="container-fluid d-flex justify-content-center">
 
                                     <div className="">
                                         <center>
                                             <h4>King Mongkut's University of Technology North Bangkok </h4>
-                                            <h5>Bachelor of Electronics Engineering (Telecommunication GPA 2.9)</h5>
+                                            <h5>Bachelor of Electronics Engineering (<Link to='/TS'>Telecommunication GPA 2.9)</Link></h5>
                                         </center>
                                     </div>
 
@@ -70,7 +70,7 @@ export default class ComponentEDUCATION extends Component {
                     <div className="row">
                         <div className="col-xs-12 col-sm-12 col-md-12 col-lg-12 ">
 
-                            <div className="container-fluid p-5 my-2 rounded" style={{ backgroundColor: "#ffbf80", borderStyle: "solid ", borderColor: "Black", borderWidth: "3px" }}>
+                            <div className="container-fluid p-5 my-2 rounded" style={{ backgroundColor: "#f2f3af", borderStyle: "solid ", borderColor: "Black", borderWidth: "3px" }}>
                                 <div className="container-fluid d-flex justify-content-center">
 
                                     <div className="">

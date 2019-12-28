@@ -44,7 +44,7 @@ constructor(props) {
                 <Header />
                 <div class="container mb-3">
                     <div className="d-flex justify-content-center mb-2">
-                        <Link to={Pdf} target="_blank" download><button className="btn btn-success" >{this.state.TextRessolution}</button></Link>
+                        <Link to={Pdf} target="_blank" download><button  className="btn btn-success" >{this.state.TextRessolution}</button></Link>
                     </div>
                     <Iframe src={Pdf} width="100%" height="800px" display={this.state.Ressolution} scrolling="yes"></Iframe>
                     <div className="d-flex justify-content-center mt-3">

@@ -20,14 +20,14 @@ import VideoFp1 from "./Finalproject/VideoFp1.mp4"
 export default class ComponentPORTFOLIO extends Component {
     render() {
         return (
-            <div className=" p-1 mt-3  rounded" style={{ backgroundColor: "#d65cad", color: "", fontSize: "16px", padding: "" }} >
+            <div className=" p-1 mt-3  rounded" style={{ backgroundColor: "#ffc34d", color: "", fontSize: "16px", padding: "" }} >
                                 <div className="container-fluid">
                                     <h3><b>PORTFOLIO</b></h3>
 
-                                    <div className="container-fluid rounded my-2 p-3" style={{ backgroundColor: "#eb99ff", borderStyle: "solid ", borderColor: "Black", borderWidth: "3px" }}>
+                                    <div className="container-fluid rounded my-2 p-3" style={{ backgroundColor: "#ffefa1", borderStyle: "solid ", borderColor: "Black", borderWidth: "3px" }}>
                                         <div className="row">
                                             <ul>
-                                                <li>Final project at university is Semi - Automatic Raw Materials Mixer Machine</li>
+                                                <li><b>Final project at university is Semi - Automatic Raw Materials Mixer Machine</b></li>
                                             </ul>
                                             <div className="container-fluid">
                                                 {/* <div className="d-flex justify-content-center my-2">
@@ -41,7 +41,7 @@ export default class ComponentPORTFOLIO extends Component {
                                                     <div className="col-xs-12 col-sm-12 col-md-6 col-lg-4 my-2 ">
 
                                                         <div className="d-flex justify-content-center">
-                                                            <img src={imgFp1} className="rounded" alt='' style={{ height: "70%", width: "70%" }} />
+                                                            <img src={imgFp1} className="rounded" alt='' style={{ height: "70%", width: "70%" , borderStyle: "solid ", borderColor: "Black", borderWidth: "3px"}} />
                                                         </div>
 
                                                     </div>
@@ -59,7 +59,7 @@ export default class ComponentPORTFOLIO extends Component {
                                                     <div className="col-xs-12 col-sm-12 col-md-6 col-lg-4 my-2">
 
                                                         <div className="d-flex justify-content-center">
-                                                            <img src={imgFp2} className="rounded" alt='' style={{ height: "70%", width: "70%" }} />
+                                                            <img src={imgFp2} className="rounded" alt='' style={{ height: "70%", width: "70%" , borderStyle: "solid ", borderColor: "Black", borderWidth: "3px" }} />
                                                         </div>
 
                                                     </div>
@@ -72,10 +72,10 @@ export default class ComponentPORTFOLIO extends Component {
 
 
 
-                                    <div className="container-fluid rounded my-2 p-3" style={{ backgroundColor: "#eb99ff", borderStyle: "solid ", borderColor: "Black", borderWidth: "3px" }}>
+                                    <div className="container-fluid rounded my-2 p-3" style={{ backgroundColor: "#ffefa1", borderStyle: "solid ", borderColor: "Black", borderWidth: "3px" }}>
                                         <div className="row">
                                             <ul>
-                                                <li>Volunteer</li>
+                                                <li><b>Volunteer</b></li>
                                             </ul>
                                             <div className="container-fluid">
 
@@ -84,7 +84,7 @@ export default class ComponentPORTFOLIO extends Component {
                                                     <div className="col-xs-12 col-sm-12 col-md-6 col-lg-4 my-2 align-self-center">
 
                                                         <div className="d-flex justify-content-center">
-                                                            <img src={Fixit2} className="rounded" alt='' style={{ height: "70%", width: "70%" }} />
+                                                            <img src={Fixit2} className="rounded" alt='' style={{ height: "70%", width: "70%" , borderStyle: "solid ", borderColor: "Black", borderWidth: "3px"}} />
                                                         </div>
 
                                                     </div>
@@ -92,7 +92,7 @@ export default class ComponentPORTFOLIO extends Component {
                                                     <div className="col-xs-12 col-sm-12 col-md-6 col-lg-4 my-2">
 
                                                         <div className="d-flex justify-content-center">
-                                                            <img src={Fixit4} className="rounded" alt='' style={{ height: "50%", width: "50%" }} />
+                                                            <img src={Fixit4} className="rounded" alt='' style={{ height: "50%", width: "50%" , borderStyle: "solid ", borderColor: "Black", borderWidth: "3px"}} />
                                                         </div>
 
                                                     </div>
@@ -100,7 +100,7 @@ export default class ComponentPORTFOLIO extends Component {
                                                     <div className="col-xs-12 col-sm-12 col-md-6 col-lg-4 my-2 align-self-center">
 
                                                         <div className="d-flex justify-content-center">
-                                                            <img src={Fixit3} className="rounded" alt='' style={{ height: "70%", width: "70%" }} />
+                                                            <img src={Fixit3} className="rounded" alt='' style={{ height: "70%", width: "70%" , borderStyle: "solid ", borderColor: "Black", borderWidth: "3px"}} />
                                                         </div>
 
                                                     </div>
@@ -108,7 +108,7 @@ export default class ComponentPORTFOLIO extends Component {
                                                     <div className="col-xs-12 col-sm-12 col-md-6 col-lg-4 my-2 ">
 
                                                         <div className="d-flex justify-content-center">
-                                                            <img src={imgVolunteer1} className="rounded" alt='' style={{ height: "70%", width: "70%" }} />
+                                                            <img src={imgVolunteer1} className="rounded" alt='' style={{ height: "70%", width: "70%" , borderStyle: "solid ", borderColor: "Black", borderWidth: "3px"}} />
                                                         </div>
 
                                                     </div>
@@ -128,7 +128,7 @@ export default class ComponentPORTFOLIO extends Component {
                                                     <div className="col-xs-12 col-sm-12 col-md-6 col-lg-4 my-2">
 
                                                         <div className="d-flex justify-content-center">
-                                                            <img src={imgVolunteer4} className="rounded" alt='' style={{ height: "70%", width: "70%" }} />
+                                                            <img src={imgVolunteer4} className="rounded" alt='' style={{ height: "70%", width: "70%" , borderStyle: "solid ", borderColor: "Black", borderWidth: "3px"}} />
                                                         </div>
 
                                                     </div>
@@ -142,10 +142,10 @@ export default class ComponentPORTFOLIO extends Component {
                                         </div>
                                     </div>
 
-                                    <div className="container-fluid rounded my-2 p-3" style={{ backgroundColor: "#eb99ff", borderStyle: "solid ", borderColor: "Black", borderWidth: "3px" }}>
+                                    <div className="container-fluid rounded my-2 p-3" style={{ backgroundColor: "#ffefa1", borderStyle: "solid ", borderColor: "Black", borderWidth: "3px" }}>
                                         <div className="row">
                                             <ul>
-                                                <li>Audio Equipment Competition</li>
+                                                <li><b>Audio Equipment Competition</b></li>
                                             </ul>
 
                                             <div className="container-fluid">
@@ -155,7 +155,7 @@ export default class ComponentPORTFOLIO extends Component {
                                                     <div className="col-xs-12 col-sm-12 col-md-6 col-lg-6 my-2 align-self-center" >
 
                                                         <div className="d-flex justify-content-center">
-                                                            <img src={IMG_2818} className="rounded" alt='' style={{ height: "70%", width: "70%" }} />
+                                                            <img src={IMG_2818} className="rounded" alt='' style={{ height: "70%", width: "70%" , borderStyle: "solid ", borderColor: "Black", borderWidth: "3px"}} />
                                                         </div>
 
                                                     </div>
@@ -163,7 +163,7 @@ export default class ComponentPORTFOLIO extends Component {
                                                     <div className="col-xs-12 col-sm-12 col-md-6 col-lg-6 my-2">
 
                                                         <div className="d-flex justify-content-center">
-                                                            <img src={IMG_2819} className="rounded" alt='' style={{ height: "70%", width: "70%" }} />
+                                                            <img src={IMG_2819} className="rounded" alt='' style={{ height: "70%", width: "70%" , borderStyle: "solid ", borderColor: "Black", borderWidth: "3px"}} />
                                                         </div>
 
                                                     </div>

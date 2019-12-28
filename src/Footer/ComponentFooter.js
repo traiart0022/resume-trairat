@@ -49,7 +49,7 @@ export default class ComponentFooter extends Component {
         }
 
         return (
-            <div className=" p-1 mt-3  rounded" style={{ backgroundColor: "#0066ff", color: "", fontSize: "16px", padding: "" }}>
+            <div className=" p-1 mt-3  rounded" style={{ backgroundColor: "#50a0c3", color: "", fontSize: "16px", padding: "" }}>
                 <div className="container-fluid">
                     <h4><b>CONTACT</b></h4>
                     <div className="container-fluid rounded my-2 p-3" style={{ backgroundColor: "#80b3ff", borderStyle: "solid ", borderColor: "Black", borderWidth: "3px" }}>
