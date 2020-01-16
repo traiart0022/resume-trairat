@@ -628,7 +628,7 @@ export default class ComponentEXPERIENCE extends Component {
                                                 <FontAwesomeIcon className="faa-spin animated" icon="sun" hidden={TextRessolution1}
                                                     style={{ height: "30px", width: "30px", color: "" }} />
 
-                                                <b>link to eve.ke.in.th</b>
+                                                <b>link to qeve.green</b>
 
                                                 <FontAwesomeIcon className="faa-spin animated" icon="sun" hidden={TextRessolution1}
                                                     style={{ height: "30px", width: "30px", color: "" }} />

@@ -221,7 +221,7 @@ export default class ComponentINTRODUSE_MYSELF extends Component {
 
 
                             <div className="" style={{ color: "#232941", fontSize: "18px", }}>
-                                <b>Name: </b><b style={{ color: "#295651", fontSize: "16px", }}>Mr.Trirat Sukphong</b>
+                                <b>Name: </b><b style={{ color: "#295651", fontSize: "16px", }}>Mr.Trairat Sukpong</b>
                             </div> <br />
 
 
