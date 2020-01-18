@@ -2,7 +2,8 @@ import React, { Component } from 'react'
 import Modal from 'react-awesome-modal';
 import img1 from "./S.Trairat1.jpg"
 import gif1 from "./1.gif"
-
+import { Link } from 'react-router-dom'
+import Pdf from './Presentation4.pdf'
 
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 
@@ -335,7 +336,11 @@ export default class ComponentINTRODUSE_MYSELF extends Component {
                         </div>
 
                     </div>
-
+                    <div class="container mt-3 mb-3">
+                        <div className="d-flex justify-content-center mb-2">
+                            <Link to={Pdf} target="_blank" download><button className="btn-lg  btn-primary" >DOWNLOAD RESUME PDF TYPE</button></Link>
+                        </div>
+                    </div>
                 </div>
             </div>
         )
