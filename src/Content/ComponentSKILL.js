@@ -281,6 +281,22 @@ export default class ComponentSKILL extends Component {
 
                                             </div>
 
+                                            <div className="d-flex justify-content-between">
+                                                <div >
+                                                    
+                                                        <li>Visual Basic Script</li>
+                                                   
+                                                </div>
+                                                <div>
+                                                    {/* <FontAwesomeIcon className={animetionSkill} icon="star" style={{ color: "#e65c00" }} />
+                                                                    <FontAwesomeIcon className={animetionSkill} icon="star" style={{ color: "#e65c00" }} />
+                                                                    <FontAwesomeIcon className={animetionSkill} icon="star" style={{ color: "#e65c00" }} />
+                                                                    <FontAwesomeIcon icon="star" style={{ color: "#adad85" }} />
+                                                                    <FontAwesomeIcon icon="star" style={{ color: "#adad85" }} /> */}
+                                                </div>
+
+                                            </div>
+
 
 
                                         </div>

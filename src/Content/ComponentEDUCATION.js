@@ -29,7 +29,7 @@ export default class ComponentEDUCATION extends Component {
                                     <div className="">
                                         <center>
                                             <h4>King Mongkut's University of Technology North Bangkok </h4>
-                                            <h5>Bachelor of Electronics Engineering (<Link to='/TS'>Telecommunication GPA 2.9)</Link></h5>
+                                            <h5>Bachelor of Electronics Engineering <Link to='/TS'>(Telecommunication GPA 2.9)</Link></h5>
                                         </center>
                                     </div>
 

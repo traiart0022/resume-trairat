@@ -23,7 +23,11 @@ import {
     faUsers,
     faDoorOpen,
     faEnvelope,
-    faStar
+    faStar,
+    faFilePdf,
+    faGraduationCap,
+    faFileWord,
+    faTachometerAlt
 } from '@fortawesome/free-solid-svg-icons'
 
 library.add(fab,
@@ -38,7 +42,11 @@ library.add(fab,
     faUsers,
     faDoorOpen,
     faEnvelope,
-    faStar
+    faStar,
+    faFilePdf,
+    faGraduationCap,
+    faFileWord,
+    faTachometerAlt
 )
 
 

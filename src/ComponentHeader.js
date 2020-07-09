@@ -2,6 +2,7 @@ import React, { Component } from 'react'
 import Cookies from "universal-cookie";
 import { Redirect, Link } from 'react-router-dom'
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
+import Pdf from './Content/Presentation4.pdf'
 const cookies = new Cookies();
 
 export default class ComponentHeader extends Component {
@@ -64,7 +65,7 @@ export default class ComponentHeader extends Component {
                 <div className="container-fluid my-1">
                     <nav className="navbar navbar-expand-lg navbar-light rounded" style={{backgroundColor:"#50a0c3"}}>
 
-                        <div><b>RESUME--></b></div>
+                        <div><b>RESUME--</b></div>
                         <div><b>MR.TRAIRAT SUKPONG</b></div>
 
 
@@ -76,25 +77,27 @@ export default class ComponentHeader extends Component {
                         <div className="collapse navbar-collapse" id="collapsibleNavbar">
                             <ul className="navbar-nav ml-auto ">
 
-                                {/*                                  <li className="nav-item">
+                                {/*                                  
+                                <li className="nav-item">
                                     <Link to='/INTRODUSEMYSELF' style={{ color: "black" }} className="nav-link" >< FontAwesomeIcon icon="door-open" /> INTRODUSE MYSELF </Link>
+                                </li>*/}
+
+                                <li className="nav-item">
+                                    <Link to='/ComponentOverview' style={{ color: "black" }} className="nav-link" >< FontAwesomeIcon icon="tachometer-alt" /> OVERVIEW </Link>
                                 </li>
 
                                 <li className="nav-item">
-                                    <Link to='/EDUCATION' style={{ color: "black" }} className="nav-link" >< FontAwesomeIcon icon="door-open" /> EDUCATION </Link>
+                                    <Link to='/Doc' style={{ color: "black" }} className="nav-link" >< FontAwesomeIcon icon="file-word" /> PROJECT DOCUMENT </Link>
                                 </li>
 
                                 <li className="nav-item">
-                                    <Link to='/SKILL' style={{ color: "black" }} className="nav-link" >< FontAwesomeIcon icon="door-open" /> SKILL </Link>
+                                    <Link to='/ts' style={{ color: "black" }} className="nav-link" >< FontAwesomeIcon icon="graduation-cap" /> TRANSCRIPT </Link>
                                 </li>
 
                                 <li className="nav-item">
-                                    <Link to='/EXPERIENCE' style={{ color: "black" }} className="nav-link" >< FontAwesomeIcon icon="door-open" /> EXPERIENCE </Link>
-                                </li>
-
-                                <li className="nav-item">
-                                    <Link to='/PORTFOLIO' style={{ color: "black" }} className="nav-link" >< FontAwesomeIcon icon="door-open" /> PORTFOLIO </Link>
-                                </li> */}
+                                    <Link to={Pdf}  target="_blank" download style={{ color: "black" }} className="nav-link" >< FontAwesomeIcon icon="file-pdf" /> DOWNLOAD RESUME PDF TYPE</Link>   
+                                                               
+                                </li> 
 
                                 <li className="nav-item">
                                     <Link onClick={this.handleClick} style={{ color: "black" }} className="nav-link" >< FontAwesomeIcon icon="door-open" /> LOGOUT </Link>
