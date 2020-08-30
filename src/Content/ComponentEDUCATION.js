@@ -13,7 +13,41 @@ var Overview_Container = {
 }
 
 export default class ComponentEDUCATION extends Component {
+
+    constructor(props) {
+        super(props)
+    
+        this.state = {
+             
+        }
+    }
+    
+
+    componentDidMount() {
+
+        this.Text()
+
+    }
+
+
+    Text() {
+        setInterval(() => {
+
+            if (window.screen.availWidth < 576) {
+                this.setState({
+                    TextRessolution1: "12px"
+                })
+            } else {
+                this.setState({
+                    TextRessolution1: "20px",
+                })
+
+            }
+
+        }, 1000);
+    }
     render() {
+        const {TextRessolution1} = this.state
         return (
 
             <div className=" p-1 mt-3 rounded" style={{ backgroundColor: "#ffd84f", color: "", fontSize: "16px", padding: "" }} >
@@ -21,15 +55,15 @@ export default class ComponentEDUCATION extends Component {
                     <h3><b >EDUCATION</b></h3>
 
                     <div className="row">
-                        <div className="col-xs-12 col-sm-12 col-md-12 col-lg-12 ">
+                        <div className="col-xs-12 col-sm-12 col-md-12 col-lg-6 ">
 
-                            <div className="container-fluid p-5 my-2 rounded" style={{ backgroundColor: "#f2f3af", borderStyle: "solid ", borderColor: "Black", borderWidth: "3px" }}>
+                            <div className="container-fluid my-2 rounded" style={{ backgroundColor: "#f2f3af", borderStyle: "solid ", borderColor: "Black", borderWidth: "3px" }}>
                                 <div className="container-fluid d-flex justify-content-center">
 
-                                    <div className="">
-                                        <center>
-                                            <h4>King Mongkut's University of Technology North Bangkok </h4>
-                                            <h5>Bachelor of Electronics Engineering <Link to='/TS'>(Telecommunication GPA 2.9)</Link></h5>
+                                    <div className="font-weight-bold"style={{fontSize: TextRessolution1}}>
+                                        <center >
+                                            King Mongkut's University of Technology North Bangkok
+                                            Bachelor of Electronics Engineering <Link to='/TS'>(Telecommunication GPA 2.9)</Link>
                                         </center>
                                     </div>
 
@@ -65,18 +99,18 @@ export default class ComponentEDUCATION extends Component {
                                 </div>
                             </div>
                         </div>
-                    </div>
+                  
 
-                    <div className="row">
-                        <div className="col-xs-12 col-sm-12 col-md-12 col-lg-12 ">
+                    
+                        <div className="col-xs-12 col-sm-12 col-md-12 col-lg-6 align-self-center">
 
-                            <div className="container-fluid p-5 my-2 rounded" style={{ backgroundColor: "#f2f3af", borderStyle: "solid ", borderColor: "Black", borderWidth: "3px" }}>
+                            <div className="container-fluid p-2 my-2 rounded" style={{ backgroundColor: "#f2f3af", borderStyle: "solid ", borderColor: "Black", borderWidth: "3px" }}>
                                 <div className="container-fluid d-flex justify-content-center">
 
-                                    <div className="">
+                                    <div className="font-weight-bold" style={{fontSize: TextRessolution1}}>
                                         <center>
-                                            <h4>Rajasitaram Technical College</h4>
-                                            <h5>Vocational Certificate Electronics Technology (GPA 3.79)</h5>
+                                            Rajasitaram Technical College
+                                            Vocational Certificate Electronics Technology (GPA 3.79)
                                         </center>
                                     </div>
                                 </div>
@@ -100,7 +134,7 @@ export default class ComponentEDUCATION extends Component {
                                 </div>
                             </div>
 
-                        </div>
+                         </div>
 
                     </div>
 

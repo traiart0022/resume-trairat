@@ -5,9 +5,9 @@ import "../font-awesome-animation.min.css"
 
 import INTRODUSEMYSELF from "./ComponentINTRODUSE_MYSELF"
 import EDUCATION from "./ComponentEDUCATION"
-import SKILL from "./ComponentSKILL"
-import EXPERIENCE from "./ComponentEXPERIENCE"
-import PORTFOLIO from "./ComponentPORTFOLIO"
+// import SKILL from "./ComponentSKILL"
+// import EXPERIENCE from "./ComponentEXPERIENCE"
+// import PORTFOLIO from "./ComponentPORTFOLIO"
 
 import { library } from '@fortawesome/fontawesome-svg-core'
 import { fab } from '@fortawesome/free-brands-svg-icons'
@@ -59,13 +59,13 @@ export default class ComponentIntroduceMyself extends Component {
             <div>
                 <Header />
 
-                <div className="container-fluid mb-3" >
+                {/* <div className="container-fluid mb-3" > */}
 
                     <INTRODUSEMYSELF />
-
-                    <div className="row">
+                    <EDUCATION />
+                    {/* <div className="row">
                         <div className="col-xs-12 col-sm-12 col-md-12 col-lg-12"  >
-                            <EDUCATION />
+
                         </div>
                     </div>
 
@@ -83,17 +83,17 @@ export default class ComponentIntroduceMyself extends Component {
 
                     <div className="row">
                         <div className="col-xs-12 col-sm-12 col-md-12 col-lg-12 "  >
-                            <PORTFOLIO/>
+                            <PORTFOLIO />
                         </div>
                     </div>
 
                     <div className="row">
                         <div className="col-xs-12 col-sm-12 col-md-12 col-lg-12 "  >
-                               <Footer />
+                            <Footer />
                         </div>
-                    </div>
-
-                </div>
+                    </div> */}
+                    <Footer />
+                {/* </div> */}
 
             </div>
 

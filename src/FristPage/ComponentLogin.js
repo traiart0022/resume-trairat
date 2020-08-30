@@ -1,6 +1,11 @@
 import React, { Component } from 'react'
 import Cookies from "universal-cookie";
 import { Redirect } from 'react-router-dom'
+var passwordHash = require('password-hash');
+//var hashedPassword = passwordHash.generate('password123');
+var hashedPassword = 'sha1$8f5960ae$1$0b45851745f22203da6412b569305720c69c3738'
+var pass 
+
 const cookies = new Cookies();
 
 export default class ComponentLogin extends Component {
@@ -37,7 +42,8 @@ export default class ComponentLogin extends Component {
 
       this.setState({ Cookies: cookies.get('cookies') })
 
-      if ((this.state.UserName === "Trairat" || this.state.UserName === "trairat") && (this.state.Password === "password1234")) {
+      pass = this.state.Password
+      if ((this.state.UserName === "Trairat" || this.state.UserName === "trairat") && (passwordHash.verify(pass, hashedPassword) === true)) {
 
         cookies.set("cookies", this.state.UserName, { path: "/" });
         this.setState({
@@ -66,14 +72,14 @@ export default class ComponentLogin extends Component {
 
     const { redirect } = this.state;
 
-    
+
 
     if (redirect === true) {
       return <Redirect to='/ComponentOverview' />;
     }
 
     return (
-      
+
       <div >
 
         <div className="container-fluid mt-5">
@@ -84,7 +90,7 @@ export default class ComponentLogin extends Component {
 
                 <form onSubmit={this.handleSubmit}>
                   <div className="form-group ">
-                    <label>User Name</label>
+                    <label>Username</label>
                     <div className="">
                       <input
                         onChange={(e) => {
@@ -94,7 +100,7 @@ export default class ComponentLogin extends Component {
                         type="text"
                         class="form-control"
                         id=""
-                        placeholder="UserName"
+                        placeholder="Username"
                       />
 
                     </div>
