@@ -1,21 +1,21 @@
 import React, { Component } from 'react'
 import Modal from 'react-awesome-modal';
-import img1 from "./S.Trairat1.jpg"
+import img1 from "./S.Trairat1.jpeg"
 // import gif1 from "./1.gif"
 import { Link } from 'react-router-dom'
-import Pdf from './Presentation6.pdf'
+import Pdf from './Presentation7.pdf'
 
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 
 var actionUp = {
     width: '80%',
-    height: '80%',
+    height: '100%',
     boxShadow: "10px 10px 5px grey"
 }
 
 var actionDown = {
     width: '80%',
-    height: '80%'
+    height: '100%'
 }
 
 export default class ComponentINTRODUSE_MYSELF extends Component {

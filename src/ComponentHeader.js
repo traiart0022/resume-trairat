@@ -97,7 +97,7 @@ export default class ComponentHeader extends Component {
                                 <Link to='/ComponentOverview' style={{ color: "black" }} className="nav-link" >
                                     <button className="btn-success btn-sm">
                                         {/* < FontAwesomeIcon icon="tachometer-alt" /> */}
-                                            INTRODUSEMYSELF
+                                            INTRODUSE MYSELF
                                         </button>
                                 </Link>
                             </li>

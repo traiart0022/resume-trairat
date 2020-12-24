@@ -55,7 +55,7 @@ export default class ComponentSKILL extends Component {
                         <h3><b>SKILL</b></h3>
 
                         <div className="row" >
-                            <div className="col-xs-12 col-sm-12 col-md-6 col-lg-6 col-xl-4" >
+                            <div className="col-xs-12 col-sm-12 col-md-6 col-lg-6 col-xl-6" >
 
                                 <div className="container-fluid rounded my-2" style={{ backgroundColor: "#d4d4aa", borderStyle: "solid ", borderColor: "Black", borderWidth: "3px" }}>
 
@@ -241,7 +241,7 @@ export default class ComponentSKILL extends Component {
 
                             </div>
 
-                            <div className="col-xs-12 col-sm-12 col-md-6 col-lg-4 col-xl-4">
+                            <div className="col-xs-12 col-sm-12 col-md-6 col-lg-4 col-xl-6">
                                 <div className="container-fluid rounded my-2" style={{ backgroundColor: "#d4d4aa", borderStyle: "solid ", borderColor: "Black", borderWidth: "3px" }}>
                                     Desktop Application
                                     <div className="container-fluid">
@@ -353,7 +353,7 @@ export default class ComponentSKILL extends Component {
                                 </div>
                             </div>
 
-                            <div className="col-xs-12 col-sm-12 col-md-6 col-lg-4 col-xl-4">
+                            <div className="col-xs-12 col-sm-12 col-md-6 col-lg-6 col-xl-6">
                                 <div className="container-fluid rounded my-2" style={{ backgroundColor: "#d4d4aa", borderStyle: "solid ", borderColor: "Black", borderWidth: "3px" }}>
                                     Language English Skills
                                     <div className="container-fluid">
@@ -434,7 +434,7 @@ export default class ComponentSKILL extends Component {
                                 </div>
                             </div>
 
-                            <div className="col-xs-12 col-sm-12 col-md-6 col-lg-4 col-xl-4">
+                            <div className="col-xs-12 col-sm-12 col-md-6 col-lg-6 col-xl-6">
                                 <div className="container-fluid rounded my-2" style={{ backgroundColor: "#d4d4aa", borderStyle: "solid ", borderColor: "Black", borderWidth: "3px" }}>
                                     Professional Skills
                                     <div className="container-fluid">
@@ -453,7 +453,7 @@ export default class ComponentSKILL extends Component {
                                 </div>
                             </div>
 
-                            <div className="col-xs-12 col-sm-12 col-md-6 col-lg-4 col-xl-4">
+                            <div className="col-xs-12 col-sm-12 col-md-6 col-lg-6 col-xl-6">
                                 <div className="container-fluid rounded my-2" style={{ backgroundColor: "#d4d4aa", borderStyle: "solid ", borderColor: "Black", borderWidth: "3px" }}>
                                     Software - SCADA
                                     <div className="container-fluid">
@@ -472,7 +472,7 @@ export default class ComponentSKILL extends Component {
                                 </div>
                             </div>
 
-                            <div className="col-xs-12 col-sm-12 col-md-6 col-lg-4 col-xl-4">
+                            <div className="col-xs-12 col-sm-12 col-md-6 col-lg-6 col-xl-6">
                                 <div className="container-fluid rounded my-2" style={{ backgroundColor: "#d4d4aa", borderStyle: "solid ", borderColor: "Black", borderWidth: "3px" }}>
                                     Tool for Develop Application And Network Skills 
                                     <div className="container-fluid">
