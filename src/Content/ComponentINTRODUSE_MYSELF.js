@@ -3,7 +3,7 @@ import Modal from 'react-awesome-modal';
 import img1 from "./S.Trairat1.jpeg"
 // import gif1 from "./1.gif"
 import { Link } from 'react-router-dom'
-import Pdf from './Presentation7.pdf'
+import Pdf from './Doc1.pdf'
 
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 
