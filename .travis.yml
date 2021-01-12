@@ -10,6 +10,7 @@ branches:
 script: # run after installed
 - npm install # install node module
 - npm run build # build project
+- npm update # build project
 install:
   npm install -g firebase-tools # install firebase-cli
 after_success:
